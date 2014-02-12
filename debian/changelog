@@ -1,3 +1,54 @@
+pygtk (2.24.0-3) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Replace python-gobject by python-gobject-2.
+  * Update repository URL.
+
+  [ Michael Biebl ]
+  * Tighten dependency between python-gtk2-dev and python-gtk2.
+    Closes: #659068
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 08 Feb 2012 08:31:09 +0100
+
+pygtk (2.24.0-2) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Drop incorrect ${python:Provides}.
+
+  [ Martin Pitt ]
+  * debian/rules: Don't call dh_numpy when building on Ubuntu, to avoid
+    dragging the sizable python-numpy into the default installation. The few
+    (if any) packages which actually use numpy ought to depend on it
+    themselves.
+  * debian/watch: Fix syntax to actually catch the latest version.
+
+ -- Martin Pitt <mpitt@debian.org>  Mon, 30 May 2011 11:34:42 +0200
+
+pygtk (2.24.0-1) unstable; urgency=low
+
+  * New upstream release (Closes: #619126).
+  * debian/control.in:
+    - Bump python-gobject-dev and libgtk2.0-dev build-dependencies
+    - Bump python-gtk2-dev dependencies against python-gobject-dev
+      and libgtk2.0-dev (Closes: #554973)
+    - Drop pysupport build-dependency and bump python-all-dev
+    - Bump Standards-Version to 3.9.2
+    - Drop all Conflicts/Replaces, all these packages only exist prior lenny
+    - Drop Python-Depends and use Depends instead
+    - Don't Depends against python-dbg, let dh_python2 generate the correct
+      versions
+    - Drop all XB-Python-Version
+    - Bump debhelper compatibility to 8
+    - Add Breaks: python-gtkglext1 (<< 1.1.0-7~) to be sure it also use
+      dh_python2
+  * debian/rules:
+    - Use dh_python2 instead of dh_pysupport
+    - Set pyexecdir to install files to py_libdir_sh
+    - Call dh_prep instead of dh_clean -k
+  * Drop debian/patches/60_pygtk-wakeupfd-fix.patch: Fixed upstream
+
+ -- Laurent Bigonville <bigon@debian.org>  Sat, 23 Apr 2011 12:56:38 +0200
+
 pygtk (2.17.0-4) unstable; urgency=low
 
   * Provide proper support python-numpy upgrades, calling dh_numpy to

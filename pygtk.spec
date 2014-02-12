@@ -4,7 +4,7 @@
 
 Summary: Python bindings for the GTK+ widget set.
 Name: pygtk2
-Version: 2.17.0
+Version: 2.24.0
 Release: 1
 Copyright: LGPL
 Group: Development/Languages
@@ -77,7 +77,6 @@ find $RPM_BUILD_ROOT -type f -name "*.la" -exec rm -f {} ';'
 
 %files
 %defattr(644, root, root, 755)
-%{_prefix}/lib/python?.?/site-packages/pygtk.pth
 %{_prefix}/lib/python?.?/site-packages/pygtk.py*
 %dir %{_prefix}/lib/python?.?/site-packages/gtk-2.0
 %dir %{_prefix}/lib/python?.?/site-packages/gtk-2.0/gtk

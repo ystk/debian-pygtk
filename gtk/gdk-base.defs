@@ -2227,7 +2227,7 @@
 
 (define-method unref
   (of-object "GdkGC")
-  (c-name "gdk_gc_unref")
+  (c-name "g_object_unref")
   (return-type "none")
 )
 
@@ -2371,7 +2371,7 @@
   (c-name "gdk_gc_set_clip_mask")
   (return-type "none")
   (parameters
-    '("GdkBitmap*" "mask")
+    '("GdkBitmap*" "mask" (null-ok))
   )
 )
 

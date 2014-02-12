@@ -3,6 +3,8 @@
 include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
 -include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
 
+include /usr/share/python/python.mk
+
 CFLAGS += -Wall -g -O$(if $(findstring noopt,$(DEB_BUILD_OPTIONS)),0,2)
 
 DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
@@ -52,7 +54,7 @@ build-%/configure-stamp: patch-stamp
 
 build-%/build-stamp: build-%/configure-stamp
 	dh_testdir
-	PYTHON=/usr/bin/python$* $(MAKE) -C build-$* pyexecdir=/var/lib/python-support/python$*
+	PYTHON=/usr/bin/python$* $(MAKE) -C build-$* pyexecdir=$(call py_libdir_sh, $*)
 	touch $@
 
 dbg-build-%/configure-stamp: patch-stamp
@@ -65,7 +67,7 @@ dbg-build-%/configure-stamp: patch-stamp
 
 dbg-build-%/build-stamp: dbg-build-%/configure-stamp
 	dh_testdir
-	PYTHON=/usr/bin/python$*-dbg $(MAKE) -C dbg-build-$*
+	PYTHON=/usr/bin/python$*-dbg $(MAKE) -C dbg-build-$* pyexecdir=$(call py_libdir_sh, $*)
 	touch $@
 
 build: $(PYVERS:%=build-%/build-stamp) $(PYVERS:%=dbg-build-%/build-stamp)
@@ -85,7 +87,7 @@ check: $(PYVERS:%=build-%/check-stamp) $(PYVERS:%=dbg-build-%/check-stamp)
 build-%/install-stamp: build-%/build-stamp
 	dh_testdir
 	dh_testroot
-	PYTHON=/usr/bin/python$* $(MAKE) -C build-$* install DESTDIR=$(CURDIR)/debian/tmp pyexecdir=/var/lib/python-support/python$*
+	PYTHON=/usr/bin/python$* $(MAKE) -C build-$* install DESTDIR=$(CURDIR)/debian/tmp pyexecdir=$(call py_libdir_sh, $*)
 	# move installed files to a per python runtime location to allow
 	# comparison of the resulting files across runtimes or shipping
 	# multiple versions
@@ -102,7 +104,7 @@ build-%/install-stamp: build-%/build-stamp
 dbg-build-%/install-stamp: dbg-build-%/build-stamp
 	dh_testdir
 	dh_testroot
-	PYTHON=/usr/bin/python$* $(MAKE) -C dbg-build-$* install DESTDIR=$(CURDIR)/debian/python-gtk2-dbg
+	PYTHON=/usr/bin/python$* $(MAKE) -C dbg-build-$* install DESTDIR=$(CURDIR)/debian/python-gtk2-dbg pyexecdir=$(call py_libdir_sh, $*)
 	find debian/python-gtk2-dbg ! -type d ! -name '*.so' | xargs rm -f
 	find debian/python-gtk2-dbg -depth -empty -exec rmdir {} \;
 	touch $@
@@ -112,7 +114,8 @@ install-stamp:
 	dh_testroot
 	# remove the install stamps to force a reinstall (since dh_clean is
 	# removing the package dirs)
-	dh_clean -k $(PYVERS:%=build-%/install-stamp) $(PYVERS:%=dbg-build-%/install-stamp)
+	rm -f $(PYVERS:%=build-%/install-stamp) $(PYVERS:%=dbg-build-%/install-stamp)
+	dh_prep
 	$(MAKE) -f debian/rules $(PYVERS:%=build-%/install-stamp) $(PYVERS:%=dbg-build-%/install-stamp)
 	# check that all builds with various Python runtimes produced the same
 	# *.defs files (or fail)
@@ -166,7 +169,7 @@ binary-indep: build install $(maybe_check)
 	dh_fixperms -i
 	# More permission fixing
 	grep -rlZ "^#\!.*python" debian/python-gtk2-dev/usr | xargs -0r chmod 755
-	dh_pysupport -ppython-gtk2-doc /usr/share/pygtk
+	dh_python2 -ppython-gtk2-doc /usr/share/pygtk
 	dh_installdeb -i
 	dh_gencontrol -i
 	dh_md5sums -i
@@ -184,8 +187,10 @@ binary-arch: build install $(maybe_check)
 	dh_link -s
 	dh_compress -s -X.py -X.glade
 	dh_fixperms -s
-	dh_pysupport -s
-	dh_numpy -s -ppython-gtk2
+	dh_python2 -a
+	if ! dpkg-vendor --is ubuntu; then \
+		dh_numpy -s -ppython-gtk2; \
+	fi
 	dh_installdeb -s
 	dh_shlibdeps -s
 	dh_gencontrol -s

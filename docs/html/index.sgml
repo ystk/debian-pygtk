@@ -245,6 +245,8 @@
         <ANCHOR id="constructor-gtkaboutdialog" href="pygtk/class-gtkaboutdialog.html#constructor-gtkaboutdialog">
         <ANCHOR id="method-gtkaboutdialog--get-name" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--get-name">
         <ANCHOR id="method-gtkaboutdialog--set-name" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--set-name">
+        <ANCHOR id="method-gtkaboutdialog--get-program-name" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--get-program-name">
+        <ANCHOR id="method-gtkaboutdialog--set-program-name" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--set-program-name">
         <ANCHOR id="method-gtkaboutdialog--get-version" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--get-version">
         <ANCHOR id="method-gtkaboutdialog--set-version" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--set-version">
         <ANCHOR id="method-gtkaboutdialog--get-copyright" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--get-copyright">
@@ -271,11 +273,11 @@
         <ANCHOR id="method-gtkaboutdialog--set-logo" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--set-logo">
         <ANCHOR id="method-gtkaboutdialog--get-logo-icon-name" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--get-logo-icon-name">
         <ANCHOR id="method-gtkaboutdialog--set-logo-icon-name" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--set-logo-icon-name">
-        <ANCHOR id="method-gtkaboutdialog--get-program-name" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--get-program-name">
-        <ANCHOR id="method-gtkaboutdialog--set-program-name" href="pygtk/class-gtkaboutdialog.html#method-gtkaboutdialog--set-program-name">
         <ANCHOR id="function-gtk--about-dialog-set-email-hook" href="pygtk/class-gtkaboutdialog.html#function-gtk--about-dialog-set-email-hook">
         <ANCHOR id="function-gtk--about-dialog-set-url-hook" href="pygtk/class-gtkaboutdialog.html#function-gtk--about-dialog-set-url-hook">
+        <ANCHOR id="signal-gtkaboutdialog--activate-link" href="pygtk/class-gtkaboutdialog.html#signal-gtkaboutdialog--activate-link">
         <ANCHOR id="class-gtkaccelgroup" href="pygtk/class-gtkaccelgroup.html">
+        <ANCHOR id="properties-gtkaccelgroup" href="pygtk/class-gtkaccelgroup.html#properties-gtkaccelgroup">
         <ANCHOR id="signal-prototypes-gtkaccelgroup" href="pygtk/class-gtkaccelgroup.html#signal-prototypes-gtkaccelgroup">
         <ANCHOR id="constructor-gtkaccelgroup" href="pygtk/class-gtkaccelgroup.html#constructor-gtkaccelgroup">
         <ANCHOR id="method-gtkaccelgroup--lock" href="pygtk/class-gtkaccelgroup.html#method-gtkaccelgroup--lock">
@@ -324,6 +326,8 @@
         <ANCHOR id="properties-gtkaccessible" href="pygtk/class-gtkaccessible.html#properties-gtkaccessible">
         <ANCHOR id="signal-prototypes-gtkaccessible" href="pygtk/class-gtkaccessible.html#signal-prototypes-gtkaccessible">
         <ANCHOR id="method-gtkaccessible--connect-widget-destroyed" href="pygtk/class-gtkaccessible.html#method-gtkaccessible--connect-widget-destroyed">
+        <ANCHOR id="method-gtkaccessible--get-widget" href="pygtk/class-gtkaccessible.html#method-gtkaccessible--get-widget">
+        <ANCHOR id="method-gtkaccessible--set-widget" href="pygtk/class-gtkaccessible.html#method-gtkaccessible--set-widget">
         <ANCHOR id="class-gtkaction" href="pygtk/class-gtkaction.html">
         <ANCHOR id="properties-gtkaction" href="pygtk/class-gtkaction.html#properties-gtkaction">
         <ANCHOR id="signal-prototypes-gtkaction" href="pygtk/class-gtkaction.html#signal-prototypes-gtkaction">
@@ -357,6 +361,8 @@
         <ANCHOR id="method-gtkaction--unblock-activate-from" href="pygtk/class-gtkaction.html#method-gtkaction--unblock-activate-from">
         <ANCHOR id="method-gtkaction--get-accel-path" href="pygtk/class-gtkaction.html#method-gtkaction--get-accel-path">
         <ANCHOR id="method-gtkaction--set-accel-path" href="pygtk/class-gtkaction.html#method-gtkaction--set-accel-path">
+        <ANCHOR id="method-gtkaction--get-always-show-image" href="pygtk/class-gtkaction.html#method-gtkaction--get-always-show-image">
+        <ANCHOR id="method-gtkaction--set-always-show-image" href="pygtk/class-gtkaction.html#method-gtkaction--set-always-show-image">
         <ANCHOR id="method-gtkaction--set-accel-group" href="pygtk/class-gtkaction.html#method-gtkaction--set-accel-group">
         <ANCHOR id="method-gtkaction--set-gicon" href="pygtk/class-gtkaction.html#method-gtkaction--set-gicon">
         <ANCHOR id="method-gtkaction--set-icon-name" href="pygtk/class-gtkaction.html#method-gtkaction--set-icon-name">
@@ -414,6 +420,7 @@
         <ANCHOR id="method-gtkadjustment--clamp-page" href="pygtk/class-gtkadjustment.html#method-gtkadjustment--clamp-page">
         <ANCHOR id="method-gtkadjustment--get-value" href="pygtk/class-gtkadjustment.html#method-gtkadjustment--get-value">
         <ANCHOR id="method-gtkadjustment--set-value" href="pygtk/class-gtkadjustment.html#method-gtkadjustment--set-value">
+        <ANCHOR id="method-gtkadjustment--configure" href="pygtk/class-gtkadjustment.html#method-gtkadjustment--configure">
         <ANCHOR id="method-gtkadjustment--get-lower" href="pygtk/class-gtkadjustment.html#method-gtkadjustment--get-lower">
         <ANCHOR id="method-gtkadjustment--set-lower" href="pygtk/class-gtkadjustment.html#method-gtkadjustment--set-lower">
         <ANCHOR id="method-gtkadjustment--get-page-increment" href="pygtk/class-gtkadjustment.html#method-gtkadjustment--get-page-increment">
@@ -473,6 +480,7 @@
         <ANCHOR id="method-gtkassistant--add-action-widget" href="pygtk/class-gtkassistant.html#method-gtkassistant--add-action-widget">
         <ANCHOR id="method-gtkassistant--remove-action-widget" href="pygtk/class-gtkassistant.html#method-gtkassistant--remove-action-widget">
         <ANCHOR id="method-gtkassistant--update-buttons-state" href="pygtk/class-gtkassistant.html#method-gtkassistant--update-buttons-state">
+        <ANCHOR id="method-gtkassistant--commit" href="pygtk/class-gtkassistant.html#method-gtkassistant--commit">
         <ANCHOR id="signal-gtkassistant--apply" href="pygtk/class-gtkassistant.html#signal-gtkassistant--apply">
         <ANCHOR id="signal-gtkassistant--cancel" href="pygtk/class-gtkassistant.html#signal-gtkassistant--cancel">
         <ANCHOR id="signal-gtkassistant--close" href="pygtk/class-gtkassistant.html#signal-gtkassistant--close">
@@ -502,6 +510,28 @@
         <ANCHOR id="method-gtkbox--reorder-child" href="pygtk/class-gtkbox.html#method-gtkbox--reorder-child">
         <ANCHOR id="method-gtkbox--query-child-packing" href="pygtk/class-gtkbox.html#method-gtkbox--query-child-packing">
         <ANCHOR id="method-gtkbox--set-child-packing" href="pygtk/class-gtkbox.html#method-gtkbox--set-child-packing">
+        <ANCHOR id="class-gtkbuildable" href="pygtk/class-gtkbuildable.html">
+        <ANCHOR id="method-gtkbuildable--add-child" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--add-child">
+        <ANCHOR id="method-gtkbuildable--construct-child" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--construct-child">
+        <ANCHOR id="method-gtkbuildable--get-internal-child" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--get-internal-child">
+        <ANCHOR id="method-gtkbuildable--get-name" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--get-name">
+        <ANCHOR id="method-gtkbuildable--parser-finished" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--parser-finished">
+        <ANCHOR id="method-gtkbuildable--set-name" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--set-name">
+        <ANCHOR id="class-gtkbuilder" href="pygtk/class-gtkbuilder.html">
+        <ANCHOR id="properties-gtkbuilder" href="pygtk/class-gtkbuilder.html#properties-gtkbuilder">
+        <ANCHOR id="gtkbuilder-ui-definition" href="pygtk/class-gtkbuilder.html#gtkbuilder-ui-definition">
+        <ANCHOR id="gtkbuilder-ui-definition-example" href="pygtk/class-gtkbuilder.html#gtkbuilder-ui-definition-example">
+        <ANCHOR id="constructor-gtkbuilder" href="pygtk/class-gtkbuilder.html#constructor-gtkbuilder">
+        <ANCHOR id="method-gtkbuilder--add-from-file" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--add-from-file">
+        <ANCHOR id="method-gtkbuilder--add-from-string" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--add-from-string">
+        <ANCHOR id="method-gtkbuilder--add-objects-from-file" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--add-objects-from-file">
+        <ANCHOR id="method-gtkbuilder--add-objects-from-string" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--add-objects-from-string">
+        <ANCHOR id="method-gtkbuilder--connect-signals" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--connect-signals">
+        <ANCHOR id="method-gtkbuilder--get-object" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--get-object">
+        <ANCHOR id="method-gtkbuilder--get-objects" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--get-objects">
+        <ANCHOR id="method-gtkbuilder--get-translation-domain" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--get-translation-domain">
+        <ANCHOR id="method-gtkbuilder--get-type-from-name" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--get-type-from-name">
+        <ANCHOR id="method-gtkbuilder--set-translation-domain" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--set-translation-domain">
         <ANCHOR id="class-gtkbutton" href="pygtk/class-gtkbutton.html">
         <ANCHOR id="properties-gtkbutton" href="pygtk/class-gtkbutton.html#properties-gtkbutton">
         <ANCHOR id="style-properties-gtkbutton" href="pygtk/class-gtkbutton.html#style-properties-gtkbutton">
@@ -526,32 +556,15 @@
         <ANCHOR id="method-gtkbutton--get-alignment" href="pygtk/class-gtkbutton.html#method-gtkbutton--get-alignment">
         <ANCHOR id="method-gtkbutton--set-image" href="pygtk/class-gtkbutton.html#method-gtkbutton--set-image">
         <ANCHOR id="method-gtkbutton--get-image" href="pygtk/class-gtkbutton.html#method-gtkbutton--get-image">
+        <ANCHOR id="method-gtkbutton--set-image-position" href="pygtk/class-gtkbutton.html#method-gtkbutton--set-image-position">
+        <ANCHOR id="method-gtkbutton--get-image-position" href="pygtk/class-gtkbutton.html#method-gtkbutton--get-image-position">
+        <ANCHOR id="method-gtkbutton--get-event-window" href="pygtk/class-gtkbutton.html#method-gtkbutton--get-event-window">
         <ANCHOR id="signal-gtkbutton--activate" href="pygtk/class-gtkbutton.html#signal-gtkbutton--activate">
         <ANCHOR id="signal-gtkbutton--clicked" href="pygtk/class-gtkbutton.html#signal-gtkbutton--clicked">
         <ANCHOR id="signal-gtkbutton--enter" href="pygtk/class-gtkbutton.html#signal-gtkbutton--enter">
         <ANCHOR id="signal-gtkbutton--leave" href="pygtk/class-gtkbutton.html#signal-gtkbutton--leave">
         <ANCHOR id="signal-gtkbutton--pressed" href="pygtk/class-gtkbutton.html#signal-gtkbutton--pressed">
         <ANCHOR id="signal-gtkbutton--released" href="pygtk/class-gtkbutton.html#signal-gtkbutton--released">
-        <ANCHOR id="class-gtkbuilder" href="pygtk/class-gtkbuilder.html">
-        <ANCHOR id="properties-gtkbuilder" href="pygtk/class-gtkbuilder.html#properties-gtkbuilder">
-        <ANCHOR id="gtkbuilder-ui-definition" href="pygtk/class-gtkbuilder.html#gtkbuilder-ui-definition">
-        <ANCHOR id="gtkbuilder-ui-definition-example" href="pygtk/class-gtkbuilder.html#gtkbuilder-ui-definition-example">
-        <ANCHOR id="constructor-gtkbuilder" href="pygtk/class-gtkbuilder.html#constructor-gtkbuilder">
-        <ANCHOR id="method-gtkbuilder--add-from-file" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--add-from-file">
-        <ANCHOR id="method-gtkbuilder--add-from-string" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--add-from-string">
-        <ANCHOR id="method-gtkbuilder--connect-signals" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--connect-signals">
-        <ANCHOR id="method-gtkbuilder--get-object" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--get-object">
-        <ANCHOR id="method-gtkbuilder--get-objects" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--get-objects">
-        <ANCHOR id="method-gtkbuilder--get-translation-domain" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--get-translation-domain">
-        <ANCHOR id="method-gtkbuilder--get-type-from-name" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--get-type-from-name">
-        <ANCHOR id="method-gtkbuilder--set-translation-domain" href="pygtk/class-gtkbuilder.html#method-gtkbuilder--set-translation-domain">
-        <ANCHOR id="class-gtkbuildable" href="pygtk/class-gtkbuildable.html">
-        <ANCHOR id="method-gtkbuildable--add-child" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--add-child">
-        <ANCHOR id="method-gtkbuildable--construct-child" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--construct-child">
-        <ANCHOR id="method-gtkbuildable--get-internal-child" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--get-internal-child">
-        <ANCHOR id="method-gtkbuildable--get-name" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--get-name">
-        <ANCHOR id="method-gtkbuildable--parser-finished" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--parser-finished">
-        <ANCHOR id="method-gtkbuildable--set-name" href="pygtk/class-gtkbuildable.html#method-gtkbuildable--set-name">
         <ANCHOR id="class-gtkbuttonbox" href="pygtk/class-gtkbuttonbox.html">
         <ANCHOR id="properties-gtkbuttonbox" href="pygtk/class-gtkbuttonbox.html#properties-gtkbuttonbox">
         <ANCHOR id="style-properties-gtkbuttonbox" href="pygtk/class-gtkbuttonbox.html#style-properties-gtkbuttonbox">
@@ -589,6 +602,7 @@
         <ANCHOR id="signal-gtkcalendar--prev-month" href="pygtk/class-gtkcalendar.html#signal-gtkcalendar--prev-month">
         <ANCHOR id="signal-gtkcalendar--prev-year" href="pygtk/class-gtkcalendar.html#signal-gtkcalendar--prev-year">
         <ANCHOR id="class-gtkcelleditable" href="pygtk/class-gtkcelleditable.html">
+        <ANCHOR id="properties-gtkeditable" href="pygtk/class-gtkcelleditable.html#properties-gtkeditable">
         <ANCHOR id="signal-prototypes-gtkcelleditable" href="pygtk/class-gtkcelleditable.html#signal-prototypes-gtkcelleditable">
         <ANCHOR id="method-gtkcelleditable--start-editing" href="pygtk/class-gtkcelleditable.html#method-gtkcelleditable--start-editing">
         <ANCHOR id="method-gtkcelleditable--editing-done" href="pygtk/class-gtkcelleditable.html#method-gtkcelleditable--editing-done">
@@ -616,6 +630,14 @@
         <ANCHOR id="method-gtkcellrenderer--stop-editing" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--stop-editing">
         <ANCHOR id="method-gtkcellrenderer--set-fixed-size" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--set-fixed-size">
         <ANCHOR id="method-gtkcellrenderer--get-fixed-size" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--get-fixed-size">
+        <ANCHOR id="method-gtkcellrenderer--set-visible" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--set-visible">
+        <ANCHOR id="method-gtkcellrenderer--get-visible" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--get-visible">
+        <ANCHOR id="method-gtkcellrenderer--set-sensitive" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--set-sensitive">
+        <ANCHOR id="method-gtkcellrenderer--get-sensitive" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--get-sensitive">
+        <ANCHOR id="method-gtkcellrenderer--set-alignment" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--set-alignment">
+        <ANCHOR id="method-gtkcellrenderer--get-alignment" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--get-alignment">
+        <ANCHOR id="method-gtkcellrenderer--set-padding" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--set-padding">
+        <ANCHOR id="method-gtkcellrenderer--get-padding" href="pygtk/class-gtkcellrenderer.html#method-gtkcellrenderer--get-padding">
         <ANCHOR id="signal-gtkcellrenderer--editing-canceled" href="pygtk/class-gtkcellrenderer.html#signal-gtkcellrenderer--editing-canceled">
         <ANCHOR id="signal-gtkcellrenderer--editing-started" href="pygtk/class-gtkcellrenderer.html#signal-gtkcellrenderer--editing-started">
         <ANCHOR id="class-gtkcellrendereraccel" href="pygtk/class-gtkcellrendereraccel.html">
@@ -641,6 +663,10 @@
         <ANCHOR id="properties-gtkcellrendererspin" href="pygtk/class-gtkcellrendererspin.html#properties-gtkcellrendererspin">
         <ANCHOR id="signal-prototypes-gtkcellrendererspin" href="pygtk/class-gtkcellrendererspin.html#signal-prototypes-gtkcellrendererspin">
         <ANCHOR id="constructor-gtkcellrendererspin" href="pygtk/class-gtkcellrendererspin.html#constructor-gtkcellrendererspin">
+        <ANCHOR id="class-gtkcellrendererspinner" href="pygtk/class-gtkcellrendererspinner.html">
+        <ANCHOR id="properties-gtkcellrendererspinner" href="pygtk/class-gtkcellrendererspinner.html#properties-gtkcellrendererspinner">
+        <ANCHOR id="signal-prototypes-gtkcellrendererspinner" href="pygtk/class-gtkcellrendererspinner.html#signal-prototypes-gtkcellrendererspinner">
+        <ANCHOR id="constructor-gtkcellrendererspinner" href="pygtk/class-gtkcellrendererspinner.html#constructor-gtkcellrendererspinner">
         <ANCHOR id="class-gtkcellrenderertext" href="pygtk/class-gtkcellrenderertext.html">
         <ANCHOR id="properties-gtkcellrenderertext" href="pygtk/class-gtkcellrenderertext.html#properties-gtkcellrenderertext">
         <ANCHOR id="signal-prototypes-gtkcellrenderertext" href="pygtk/class-gtkcellrenderertext.html#signal-prototypes-gtkcellrenderertext">
@@ -655,6 +681,8 @@
         <ANCHOR id="method-gtkcellrenderertoggle--set-radio" href="pygtk/class-gtkcellrenderertoggle.html#method-gtkcellrenderertoggle--set-radio">
         <ANCHOR id="method-gtkcellrenderertoggle--get-active" href="pygtk/class-gtkcellrenderertoggle.html#method-gtkcellrenderertoggle--get-active">
         <ANCHOR id="method-gtkcellrenderertoggle--set-active" href="pygtk/class-gtkcellrenderertoggle.html#method-gtkcellrenderertoggle--set-active">
+        <ANCHOR id="method-gtkcellrenderertoggle--get-activatable" href="pygtk/class-gtkcellrenderertoggle.html#method-gtkcellrenderertoggle--get-activatable">
+        <ANCHOR id="method-gtkcellrenderertoggle--set-activatable" href="pygtk/class-gtkcellrenderertoggle.html#method-gtkcellrenderertoggle--set-activatable">
         <ANCHOR id="signal-gtkcellrenderertoggle--toggled" href="pygtk/class-gtkcellrenderertoggle.html#signal-gtkcellrenderertoggle--toggled">
         <ANCHOR id="class-gtkcellview" href="pygtk/class-gtkcellview.html">
         <ANCHOR id="properties-gtkcellview" href="pygtk/class-gtkcellview.html#properties-gtkcellview">
@@ -693,28 +721,28 @@
         <ANCHOR id="signal-prototypes-gtkclipboard" href="pygtk/class-gtkclipboard.html#signal-prototypes-gtkclipboard">
         <ANCHOR id="constructor-gtkclipboard" href="pygtk/class-gtkclipboard.html#constructor-gtkclipboard">
         <ANCHOR id="method-gtkclipboard--get-display" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--get-display">
-        <ANCHOR id="method-gtkclipboard--set-with-data" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--set-with-data">
         <ANCHOR id="method-gtkclipboard--get-owner" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--get-owner">
-        <ANCHOR id="method-gtkclipboard--clear" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--clear">
-        <ANCHOR id="method-gtkclipboard--set-text" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--set-text">
-        <ANCHOR id="method-gtkclipboard--request-contents" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--request-contents">
-        <ANCHOR id="method-gtkclipboard--request-text" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--request-text">
-        <ANCHOR id="method-gtkclipboard--request-targets" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--request-targets">
-        <ANCHOR id="method-gtkclipboard--wait-for-contents" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-for-contents">
-        <ANCHOR id="method-gtkclipboard--wait-for-text" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-for-text">
-        <ANCHOR id="method-gtkclipboard--wait-is-text-available" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-is-text-available">
-        <ANCHOR id="method-gtkclipboard--wait-for-targets" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-for-targets">
-        <ANCHOR id="method-gtkclipboard--wait-is-target-available" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-is-target-available">
-        <ANCHOR id="method-gtkclipboard--set-can-store" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--set-can-store">
         <ANCHOR id="method-gtkclipboard--store" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--store">
-        <ANCHOR id="method-gtkclipboard--request-image" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--request-image">
-        <ANCHOR id="method-gtkclipboard--wait-for-image" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-for-image">
+        <ANCHOR id="method-gtkclipboard--clear" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--clear">
+        <ANCHOR id="method-gtkclipboard--set-can-store" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--set-can-store">
+        <ANCHOR id="method-gtkclipboard--set-with-data" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--set-with-data">
+        <ANCHOR id="method-gtkclipboard--set-text" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--set-text">
         <ANCHOR id="method-gtkclipboard--set-image" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--set-image">
-        <ANCHOR id="method-gtkclipboard--wait-is-image-available" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-is-image-available">
-        <ANCHOR id="method-gtkclipboard--request-rich-text" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--request-rich-text">
+        <ANCHOR id="method-gtkclipboard--wait-for-contents" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-for-contents">
+        <ANCHOR id="method-gtkclipboard--wait-for-targets" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-for-targets">
+        <ANCHOR id="method-gtkclipboard--wait-for-text" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-for-text">
         <ANCHOR id="method-gtkclipboard--wait-for-rich-text" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-for-rich-text">
-        <ANCHOR id="method-gtkclipboard--wait-is-rich-text-available" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-is-rich-text-available">
+        <ANCHOR id="method-gtkclipboard--wait-for-image" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-for-image">
+        <ANCHOR id="method-gtkclipboard--wait-is-target-available" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-is-target-available">
         <ANCHOR id="method-gtkclipboard--wait-is-uris-available" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-is-uris-available">
+        <ANCHOR id="method-gtkclipboard--wait-is-text-available" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-is-text-available">
+        <ANCHOR id="method-gtkclipboard--wait-is-rich-text-available" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-is-rich-text-available">
+        <ANCHOR id="method-gtkclipboard--wait-is-image-available" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--wait-is-image-available">
+        <ANCHOR id="method-gtkclipboard--request-contents" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--request-contents">
+        <ANCHOR id="method-gtkclipboard--request-targets" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--request-targets">
+        <ANCHOR id="method-gtkclipboard--request-text" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--request-text">
+        <ANCHOR id="method-gtkclipboard--request-rich-text" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--request-rich-text">
+        <ANCHOR id="method-gtkclipboard--request-image" href="pygtk/class-gtkclipboard.html#method-gtkclipboard--request-image">
         <ANCHOR id="function-gtk--clipboard-get" href="pygtk/class-gtkclipboard.html#function-gtk--clipboard-get">
         <ANCHOR id="signal-gtkclipboard--owner-change" href="pygtk/class-gtkclipboard.html#signal-gtkclipboard--owner-change">
         <ANCHOR id="class-gtkcolorbutton" href="pygtk/class-gtkcolorbutton.html">
@@ -777,6 +805,9 @@
         <ANCHOR id="style-properties-gtkcombobox" href="pygtk/class-gtkcombobox.html#style-properties-gtkcombobox">
         <ANCHOR id="signal-prototypes-gtkcombobox" href="pygtk/class-gtkcombobox.html#signal-prototypes-gtkcombobox">
         <ANCHOR id="constructor-gtkcombobox" href="pygtk/class-gtkcombobox.html#constructor-gtkcombobox">
+        <ANCHOR id="method-gtkcombobox--get-has-entry" href="pygtk/class-gtkcombobox.html#method-gtkcombobox--get-has-entry">
+        <ANCHOR id="method-gtkcombobox--get-entry-text-column" href="pygtk/class-gtkcombobox.html#method-gtkcombobox--get-entry-text-column">
+        <ANCHOR id="method-gtkcombobox--set-entry-text-column" href="pygtk/class-gtkcombobox.html#method-gtkcombobox--set-entry-text-column">
         <ANCHOR id="method-gtkcombobox--get-wrap-width" href="pygtk/class-gtkcombobox.html#method-gtkcombobox--get-wrap-width">
         <ANCHOR id="method-gtkcombobox--set-wrap-width" href="pygtk/class-gtkcombobox.html#method-gtkcombobox--set-wrap-width">
         <ANCHOR id="method-gtkcombobox--get-row-span-column" href="pygtk/class-gtkcombobox.html#method-gtkcombobox--get-row-span-column">
@@ -819,6 +850,17 @@
         <ANCHOR id="method-gtkcomboboxentry--set-text-column" href="pygtk/class-gtkcomboboxentry.html#method-gtkcomboboxentry--set-text-column">
         <ANCHOR id="method-gtkcomboboxentry--get-text-column" href="pygtk/class-gtkcomboboxentry.html#method-gtkcomboboxentry--get-text-column">
         <ANCHOR id="function-gtk--combo-box-entry-new-text" href="pygtk/class-gtkcomboboxentry.html#function-gtk--combo-box-entry-new-text">
+        <ANCHOR id="class-gtkcomboboxtext" href="pygtk/class-gtkcomboboxtext.html">
+        <ANCHOR id="properties-gtkcomboboxtext" href="pygtk/class-gtkcomboboxtext.html#properties-gtkcomboboxtext">
+        <ANCHOR id="style-properties-gtkcomboboxtext" href="pygtk/class-gtkcomboboxtext.html#style-properties-gtkcomboboxtext">
+        <ANCHOR id="signal-prototypes-gtkcomboboxtext" href="pygtk/class-gtkcomboboxtext.html#signal-prototypes-gtkcomboboxtext">
+        <ANCHOR id="constructor-gtkcomboboxtext" href="pygtk/class-gtkcomboboxtext.html#constructor-gtkcomboboxtext">
+        <ANCHOR id="method-gtkcomboboxtext--append-text" href="pygtk/class-gtkcomboboxtext.html#method-gtkcomboboxtext--append-text">
+        <ANCHOR id="method-gtkcomboboxtext--insert-text" href="pygtk/class-gtkcomboboxtext.html#method-gtkcomboboxtext--insert-text">
+        <ANCHOR id="method-gtkcomboboxtext--prepend-text" href="pygtk/class-gtkcomboboxtext.html#method-gtkcomboboxtext--prepend-text">
+        <ANCHOR id="method-gtkcomboboxtext--remove" href="pygtk/class-gtkcomboboxtext.html#method-gtkcomboboxtext--remove">
+        <ANCHOR id="method-gtkcomboboxtext--get-active-text" href="pygtk/class-gtkcomboboxtext.html#method-gtkcomboboxtext--get-active-text">
+        <ANCHOR id="function-gtk--combo-box-text-new-with-entry" href="pygtk/class-gtkcomboboxtext.html#function-gtk--combo-box-text-new-with-entry">
         <ANCHOR id="class-gtkcontainer" href="pygtk/class-gtkcontainer.html">
         <ANCHOR id="properties-gtkcontainer" href="pygtk/class-gtkcontainer.html#properties-gtkcontainer">
         <ANCHOR id="style-properties-gtkcontainer" href="pygtk/class-gtkcontainer.html#style-properties-gtkcontainer">
@@ -890,6 +932,7 @@
         <ANCHOR id="method-gtkdialog--run" href="pygtk/class-gtkdialog.html#method-gtkdialog--run">
         <ANCHOR id="method-gtkdialog--set-alternative-button-order" href="pygtk/class-gtkdialog.html#method-gtkdialog--set-alternative-button-order">
         <ANCHOR id="method-gtkdialog--get-response-for-widget" href="pygtk/class-gtkdialog.html#method-gtkdialog--get-response-for-widget">
+        <ANCHOR id="method-gtkdialog--get-widget-for-response" href="pygtk/class-gtkdialog.html#method-gtkdialog--get-widget-for-response">
         <ANCHOR id="method-gtkdialog--get-action-area" href="pygtk/class-gtkdialog.html#method-gtkdialog--get-action-area">
         <ANCHOR id="method-gtkdialog--get-content-area" href="pygtk/class-gtkdialog.html#method-gtkdialog--get-content-area">
         <ANCHOR id="function-gtk--alternative-dialog-button-order" href="pygtk/class-gtkdialog.html#function-gtk--alternative-dialog-button-order">
@@ -927,6 +970,7 @@
         <ANCHOR id="method-gtkentry--get-visibility" href="pygtk/class-gtkentry.html#method-gtkentry--get-visibility">
         <ANCHOR id="method-gtkentry--set-invisible-char" href="pygtk/class-gtkentry.html#method-gtkentry--set-invisible-char">
         <ANCHOR id="method-gtkentry--get-invisible-char" href="pygtk/class-gtkentry.html#method-gtkentry--get-invisible-char">
+        <ANCHOR id="method-gtkentry--unset-invisible-char" href="pygtk/class-gtkentry.html#method-gtkentry--unset-invisible-char">
         <ANCHOR id="method-gtkentry--set-has-frame" href="pygtk/class-gtkentry.html#method-gtkentry--set-has-frame">
         <ANCHOR id="method-gtkentry--get-has-frame" href="pygtk/class-gtkentry.html#method-gtkentry--get-has-frame">
         <ANCHOR id="method-gtkentry--set-max-length" href="pygtk/class-gtkentry.html#method-gtkentry--set-max-length">
@@ -937,6 +981,7 @@
         <ANCHOR id="method-gtkentry--get-width-chars" href="pygtk/class-gtkentry.html#method-gtkentry--get-width-chars">
         <ANCHOR id="method-gtkentry--set-text" href="pygtk/class-gtkentry.html#method-gtkentry--set-text">
         <ANCHOR id="method-gtkentry--get-text" href="pygtk/class-gtkentry.html#method-gtkentry--get-text">
+        <ANCHOR id="method-gtkentry--get-text-length" href="pygtk/class-gtkentry.html#method-gtkentry--get-text-length">
         <ANCHOR id="method-gtkentry--get-layout" href="pygtk/class-gtkentry.html#method-gtkentry--get-layout">
         <ANCHOR id="method-gtkentry--get-layout-offsets" href="pygtk/class-gtkentry.html#method-gtkentry--get-layout-offsets">
         <ANCHOR id="method-gtkentry--set-alignment" href="pygtk/class-gtkentry.html#method-gtkentry--set-alignment">
@@ -947,9 +992,41 @@
         <ANCHOR id="method-gtkentry--get-inner-border" href="pygtk/class-gtkentry.html#method-gtkentry--get-inner-border">
         <ANCHOR id="method-gtkentry--set-cursor-hadjustment" href="pygtk/class-gtkentry.html#method-gtkentry--set-cursor-hadjustment">
         <ANCHOR id="method-gtkentry--get-cursor-hadjustment" href="pygtk/class-gtkentry.html#method-gtkentry--get-cursor-hadjustment">
-        <ANCHOR id="method-gtkentry--set-override-mode" href="pygtk/class-gtkentry.html#method-gtkentry--set-override-mode">
-        <ANCHOR id="method-gtkentry--get-override-mode" href="pygtk/class-gtkentry.html#method-gtkentry--get-override-mode">
-        <ANCHOR id="method-gtkentry--get-text-length" href="pygtk/class-gtkentry.html#method-gtkentry--get-text-length">
+        <ANCHOR id="method-gtkentry--set-overwrite-mode" href="pygtk/class-gtkentry.html#method-gtkentry--set-overwrite-mode">
+        <ANCHOR id="method-gtkentry--get-overwrite-mode" href="pygtk/class-gtkentry.html#method-gtkentry--get-overwrite-mode">
+        <ANCHOR id="method-gtkentry--set-buffer" href="pygtk/class-gtkentry.html#method-gtkentry--set-buffer">
+        <ANCHOR id="method-gtkentry--get-buffer" href="pygtk/class-gtkentry.html#method-gtkentry--get-buffer">
+        <ANCHOR id="method-gtkentry--set-progress-fraction" href="pygtk/class-gtkentry.html#method-gtkentry--set-progress-fraction">
+        <ANCHOR id="method-gtkentry--get-progress-fraction" href="pygtk/class-gtkentry.html#method-gtkentry--get-progress-fraction">
+        <ANCHOR id="method-gtkentry--set-progress-pulse-step" href="pygtk/class-gtkentry.html#method-gtkentry--set-progress-pulse-step">
+        <ANCHOR id="method-gtkentry--get-progress-pulse-step" href="pygtk/class-gtkentry.html#method-gtkentry--get-progress-pulse-step">
+        <ANCHOR id="method-gtkentry--progress-pulse" href="pygtk/class-gtkentry.html#method-gtkentry--progress-pulse">
+        <ANCHOR id="method-gtkentry--set-icon-from-pixbuf" href="pygtk/class-gtkentry.html#method-gtkentry--set-icon-from-pixbuf">
+        <ANCHOR id="method-gtkentry--set-icon-from-stock" href="pygtk/class-gtkentry.html#method-gtkentry--set-icon-from-stock">
+        <ANCHOR id="method-gtkentry--set-icon-from-icon-name" href="pygtk/class-gtkentry.html#method-gtkentry--set-icon-from-icon-name">
+        <ANCHOR id="method-gtkentry--set-icon-from-gicon" href="pygtk/class-gtkentry.html#method-gtkentry--set-icon-from-gicon">
+        <ANCHOR id="method-gtkentry--get-icon-storage-type" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-storage-type">
+        <ANCHOR id="method-gtkentry--get-icon-pixbuf" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-pixbuf">
+        <ANCHOR id="method-gtkentry--get-icon-stock" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-stock">
+        <ANCHOR id="method-gtkentry--get-icon-name" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-name">
+        <ANCHOR id="method-gtkentry--get-icon-gicon" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-gicon">
+        <ANCHOR id="method-gtkentry--set-icon-activatable" href="pygtk/class-gtkentry.html#method-gtkentry--set-icon-activatable">
+        <ANCHOR id="method-gtkentry--get-icon-activatable" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-activatable">
+        <ANCHOR id="method-gtkentry--set-icon-sensitive" href="pygtk/class-gtkentry.html#method-gtkentry--set-icon-sensitive">
+        <ANCHOR id="method-gtkentry--get-icon-sensitive" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-sensitive">
+        <ANCHOR id="method-gtkentry--get-icon-at-pos" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-at-pos">
+        <ANCHOR id="method-gtkentry--set-icon-tooltip-text" href="pygtk/class-gtkentry.html#method-gtkentry--set-icon-tooltip-text">
+        <ANCHOR id="method-gtkentry--get-icon-tooltip-text" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-tooltip-text">
+        <ANCHOR id="method-gtkentry--set-icon-tooltip-markup" href="pygtk/class-gtkentry.html#method-gtkentry--set-icon-tooltip-markup">
+        <ANCHOR id="method-gtkentry--get-icon-tooltip-markup" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-tooltip-markup">
+        <ANCHOR id="method-gtkentry--set-icon-drag-source" href="pygtk/class-gtkentry.html#method-gtkentry--set-icon-drag-source">
+        <ANCHOR id="method-gtkentry--get-current-icon-drag-source" href="pygtk/class-gtkentry.html#method-gtkentry--get-current-icon-drag-source">
+        <ANCHOR id="method-gtkentry--get-icon-window" href="pygtk/class-gtkentry.html#method-gtkentry--get-icon-window">
+        <ANCHOR id="method-gtkentry--get-text-window" href="pygtk/class-gtkentry.html#method-gtkentry--get-text-window">
+        <ANCHOR id="method-gtkentry--layout-index-to-text-index" href="pygtk/class-gtkentry.html#method-gtkentry--layout-index-to-text-index">
+        <ANCHOR id="method-gtkentry--text-index-to-layout-index" href="pygtk/class-gtkentry.html#method-gtkentry--text-index-to-layout-index">
+        <ANCHOR id="method-gtkentry--im-context-filter-keypress" href="pygtk/class-gtkentry.html#method-gtkentry--im-context-filter-keypress">
+        <ANCHOR id="method-gtkentry--reset-im-context" href="pygtk/class-gtkentry.html#method-gtkentry--reset-im-context">
         <ANCHOR id="signal-gtkentry--activate" href="pygtk/class-gtkentry.html#signal-gtkentry--activate">
         <ANCHOR id="signal-gtkentry--backspace" href="pygtk/class-gtkentry.html#signal-gtkentry--backspace">
         <ANCHOR id="signal-gtkentry--copy-clipboard" href="pygtk/class-gtkentry.html#signal-gtkentry--copy-clipboard">
@@ -961,7 +1038,24 @@
         <ANCHOR id="signal-gtkentry--move-cursor" href="pygtk/class-gtkentry.html#signal-gtkentry--move-cursor">
         <ANCHOR id="signal-gtkentry--paste-clipboard" href="pygtk/class-gtkentry.html#signal-gtkentry--paste-clipboard">
         <ANCHOR id="signal-gtkentry--populate-popup" href="pygtk/class-gtkentry.html#signal-gtkentry--populate-popup">
+        <ANCHOR id="signal-gtkentry--preedit-changed" href="pygtk/class-gtkentry.html#signal-gtkentry--preedit-changed">
         <ANCHOR id="signal-gtkentry--toggle-overwrite" href="pygtk/class-gtkentry.html#signal-gtkentry--toggle-overwrite">
+        <ANCHOR id="class-gtkentrybuffer" href="pygtk/class-gtkentrybuffer.html">
+        <ANCHOR id="properties-gtkentrybuffer" href="pygtk/class-gtkentrybuffer.html#properties-gtkentrybuffer">
+        <ANCHOR id="signal-prototypes-gtkentrybuffer" href="pygtk/class-gtkentrybuffer.html#signal-prototypes-gtkentrybuffer">
+        <ANCHOR id="constructor-gtkentrybuffer" href="pygtk/class-gtkentrybuffer.html#constructor-gtkentrybuffer">
+        <ANCHOR id="method-gtkentrybuffer--get-bytes" href="pygtk/class-gtkentrybuffer.html#method-gtkentrybuffer--get-bytes">
+        <ANCHOR id="method-gtkentrybuffer--get-length" href="pygtk/class-gtkentrybuffer.html#method-gtkentrybuffer--get-length">
+        <ANCHOR id="method-gtkentrybuffer--set-text" href="pygtk/class-gtkentrybuffer.html#method-gtkentrybuffer--set-text">
+        <ANCHOR id="method-gtkentrybuffer--get-text" href="pygtk/class-gtkentrybuffer.html#method-gtkentrybuffer--get-text">
+        <ANCHOR id="method-gtkentrybuffer--get-max-length" href="pygtk/class-gtkentrybuffer.html#method-gtkentrybuffer--get-max-length">
+        <ANCHOR id="method-gtkentrybuffer--set-max-length" href="pygtk/class-gtkentrybuffer.html#method-gtkentrybuffer--set-max-length">
+        <ANCHOR id="method-gtkentrybuffer--insert-text" href="pygtk/class-gtkentrybuffer.html#method-gtkentrybuffer--insert-text">
+        <ANCHOR id="method-gtkentrybuffer--delete-text" href="pygtk/class-gtkentrybuffer.html#method-gtkentrybuffer--delete-text">
+        <ANCHOR id="method-gtkentrybuffer--emit-inserted-text" href="pygtk/class-gtkentrybuffer.html#method-gtkentrybuffer--emit-inserted-text">
+        <ANCHOR id="method-gtkentrybuffer--emit-deleted-text" href="pygtk/class-gtkentrybuffer.html#method-gtkentrybuffer--emit-deleted-text">
+        <ANCHOR id="signal-gtkentrybuffer--deleted-text" href="pygtk/class-gtkentrybuffer.html#signal-gtkentrybuffer--deleted-text">
+        <ANCHOR id="signal-gtkentrybuffer--inserted-text" href="pygtk/class-gtkentrybuffer.html#signal-gtkentrybuffer--inserted-text">
         <ANCHOR id="class-gtkentrycompletion" href="pygtk/class-gtkentrycompletion.html">
         <ANCHOR id="properties-gtkentrycompletion" href="pygtk/class-gtkentrycompletion.html#properties-gtkentrycompletion">
         <ANCHOR id="signal-prototypes-gtkentrycompletion" href="pygtk/class-gtkentrycompletion.html#signal-prototypes-gtkentrycompletion">
@@ -989,6 +1083,7 @@
         <ANCHOR id="method-gtkentrycompletion--get-popup-set-width" href="pygtk/class-gtkentrycompletion.html#method-gtkentrycompletion--get-popup-set-width">
         <ANCHOR id="method-gtkentrycompletion--set-popup-single-match" href="pygtk/class-gtkentrycompletion.html#method-gtkentrycompletion--set-popup-single-match">
         <ANCHOR id="method-gtkentrycompletion--get-popup-single-match" href="pygtk/class-gtkentrycompletion.html#method-gtkentrycompletion--get-popup-single-match">
+        <ANCHOR id="method-gtkentrycompletion--get-completion-prefix" href="pygtk/class-gtkentrycompletion.html#method-gtkentrycompletion--get-completion-prefix">
         <ANCHOR id="signal-gtkentrycompletion--action-activated" href="pygtk/class-gtkentrycompletion.html#signal-gtkentrycompletion--action-activated">
         <ANCHOR id="signal-gtkentrycompletion--cursor-on-match" href="pygtk/class-gtkentrycompletion.html#signal-gtkentrycompletion--cursor-on-match">
         <ANCHOR id="signal-gtkentrycompletion--insert-prefix" href="pygtk/class-gtkentrycompletion.html#signal-gtkentrycompletion--insert-prefix">
@@ -1021,6 +1116,8 @@
         <ANCHOR id="method-gtkexpander--set-label-widget" href="pygtk/class-gtkexpander.html#method-gtkexpander--set-label-widget">
         <ANCHOR id="method-gtkexpander--get-label-widget" href="pygtk/class-gtkexpander.html#method-gtkexpander--get-label-widget">
         <ANCHOR id="function-gtk--expander-new-with-mnemonic" href="pygtk/class-gtkexpander.html#function-gtk--expander-new-with-mnemonic">
+        <ANCHOR id="method-gtkexpander--set-label-fill" href="pygtk/class-gtkexpander.html#method-gtkexpander--set-label-fill">
+        <ANCHOR id="method-gtkexpander--get-label-fill" href="pygtk/class-gtkexpander.html#method-gtkexpander--get-label-fill">
         <ANCHOR id="signal-gtkexpander--activate" href="pygtk/class-gtkexpander.html#signal-gtkexpander--activate">
         <ANCHOR id="class-gtkfilechooser" href="pygtk/class-gtkfilechooser.html">
         <ANCHOR id="properties-gtkfilechooser" href="pygtk/class-gtkfilechooser.html#properties-gtkfilechooser">
@@ -1188,6 +1285,7 @@
         <ANCHOR id="style-properties-gtkfontselectiondialog" href="pygtk/class-gtkfontselectiondialog.html#style-properties-gtkfontselectiondialog">
         <ANCHOR id="signal-prototypes-gtkfontselectiondialog" href="pygtk/class-gtkfontselectiondialog.html#signal-prototypes-gtkfontselectiondialog">
         <ANCHOR id="constructor-gtkfontselectiondialog" href="pygtk/class-gtkfontselectiondialog.html#constructor-gtkfontselectiondialog">
+        <ANCHOR id="method-gtkfontselectiondialog--get-font-selection" href="pygtk/class-gtkfontselectiondialog.html#method-gtkfontselectiondialog--get-font-selection">
         <ANCHOR id="method-gtkfontselectiondialog--get-font-name" href="pygtk/class-gtkfontselectiondialog.html#method-gtkfontselectiondialog--get-font-name">
         <ANCHOR id="method-gtkfontselectiondialog--set-font-name" href="pygtk/class-gtkfontselectiondialog.html#method-gtkfontselectiondialog--set-font-name">
         <ANCHOR id="method-gtkfontselectiondialog--get-preview-text" href="pygtk/class-gtkfontselectiondialog.html#method-gtkfontselectiondialog--get-preview-text">
@@ -1409,6 +1507,12 @@
         <ANCHOR id="method-gtkiconview--set-tooltip-column" href="pygtk/class-gtkiconview.html#method-gtkiconview--set-tooltip-column">
         <ANCHOR id="method-gtkiconview--get-tooltip-column" href="pygtk/class-gtkiconview.html#method-gtkiconview--get-tooltip-column">
         <ANCHOR id="method-gtkiconview--set-tooltip-item" href="pygtk/class-gtkiconview.html#method-gtkiconview--set-tooltip-item">
+        <ANCHOR id="method-gtkiconview--get-item-row" href="pygtk/class-gtkiconview.html#method-gtkiconview--get-item-row">
+        <ANCHOR id="method-gtkiconview--get-item-column" href="pygtk/class-gtkiconview.html#method-gtkiconview--get-item-column">
+        <ANCHOR id="method-gtkiconview--set-item-orientation" href="pygtk/class-gtkiconview.html#method-gtkiconview--set-item-orientation">
+        <ANCHOR id="method-gtkiconview--get-item-orientation" href="pygtk/class-gtkiconview.html#method-gtkiconview--get-item-orientation">
+        <ANCHOR id="method-gtkiconview--set-item-padding" href="pygtk/class-gtkiconview.html#method-gtkiconview--set-item-padding">
+        <ANCHOR id="method-gtkiconview--get-item-padding" href="pygtk/class-gtkiconview.html#method-gtkiconview--get-item-padding">
         <ANCHOR id="signal-gtkiconview--activate-cursor-item" href="pygtk/class-gtkiconview.html#signal-gtkiconview--activate-cursor-item">
         <ANCHOR id="signal-gtkiconview--item-activated" href="pygtk/class-gtkiconview.html#signal-gtkiconview--item-activated">
         <ANCHOR id="signal-gtkiconview--move-cursor" href="pygtk/class-gtkiconview.html#signal-gtkiconview--move-cursor">
@@ -1459,6 +1563,11 @@
         <ANCHOR id="constructor-gtkimagemenuitem" href="pygtk/class-gtkimagemenuitem.html#constructor-gtkimagemenuitem">
         <ANCHOR id="method-gtkimagemenuitem--set-image" href="pygtk/class-gtkimagemenuitem.html#method-gtkimagemenuitem--set-image">
         <ANCHOR id="method-gtkimagemenuitem--get-image" href="pygtk/class-gtkimagemenuitem.html#method-gtkimagemenuitem--get-image">
+        <ANCHOR id="method-gtkimagemenuitem--set-always-show-image" href="pygtk/class-gtkimagemenuitem.html#method-gtkimagemenuitem--set-always-show-image">
+        <ANCHOR id="method-gtkimagemenuitem--get-always-show-image" href="pygtk/class-gtkimagemenuitem.html#method-gtkimagemenuitem--get-always-show-image">
+        <ANCHOR id="method-gtkimagemenuitem--set-use-stock" href="pygtk/class-gtkimagemenuitem.html#method-gtkimagemenuitem--set-use-stock">
+        <ANCHOR id="method-gtkimagemenuitem--get-use-stock" href="pygtk/class-gtkimagemenuitem.html#method-gtkimagemenuitem--get-use-stock">
+        <ANCHOR id="method-gtkimagemenuitem--set-accel-group" href="pygtk/class-gtkimagemenuitem.html#method-gtkimagemenuitem--set-accel-group">
         <ANCHOR id="class-gtkimcontext" href="pygtk/class-gtkimcontext.html">
         <ANCHOR id="signal-prototypes-gtkimcontext" href="pygtk/class-gtkimcontext.html#signal-prototypes-gtkimcontext">
         <ANCHOR id="method-gtkimcontext--set-client-window" href="pygtk/class-gtkimcontext.html#method-gtkimcontext--set-client-window">
@@ -1485,6 +1594,24 @@
         <ANCHOR id="signal-prototypes-gtkimmulticontext" href="pygtk/class-gtkimmulticontext.html#signal-prototypes-gtkimmulticontext">
         <ANCHOR id="constructor-gtkimmulticontext" href="pygtk/class-gtkimmulticontext.html#constructor-gtkimmulticontext">
         <ANCHOR id="method-gtkimmulticontext--append-menuitems" href="pygtk/class-gtkimmulticontext.html#method-gtkimmulticontext--append-menuitems">
+        <ANCHOR id="method-gtkimmulticontext--get-context-id" href="pygtk/class-gtkimmulticontext.html#method-gtkimmulticontext--get-context-id">
+        <ANCHOR id="method-gtkimmulticontext--set-context-id" href="pygtk/class-gtkimmulticontext.html#method-gtkimmulticontext--set-context-id">
+        <ANCHOR id="class-gtkinfobar" href="pygtk/class-gtkinfobar.html">
+        <ANCHOR id="properties-gtkinfobar" href="pygtk/class-gtkinfobar.html#properties-gtkinfobar">
+        <ANCHOR id="style-properties-gtkinfobar" href="pygtk/class-gtkinfobar.html#style-properties-gtkinfobar">
+        <ANCHOR id="signal-prototypes-gtkinfobar" href="pygtk/class-gtkinfobar.html#signal-prototypes-gtkinfobar">
+        <ANCHOR id="method-gtkinfobar--get-action-area" href="pygtk/class-gtkinfobar.html#method-gtkinfobar--get-action-area">
+        <ANCHOR id="method-gtkinfobar--get-content-area" href="pygtk/class-gtkinfobar.html#method-gtkinfobar--get-content-area">
+        <ANCHOR id="method-gtkinfobar--add-action-widget" href="pygtk/class-gtkinfobar.html#method-gtkinfobar--add-action-widget">
+        <ANCHOR id="method-gtkinfobar--add-button" href="pygtk/class-gtkinfobar.html#method-gtkinfobar--add-button">
+        <ANCHOR id="method-gtkinfobar--add-buttons" href="pygtk/class-gtkinfobar.html#method-gtkinfobar--add-buttons">
+        <ANCHOR id="method-gtkinfobar--set-response-sensitive" href="pygtk/class-gtkinfobar.html#method-gtkinfobar--set-response-sensitive">
+        <ANCHOR id="method-gtkinfobar--set-default-response" href="pygtk/class-gtkinfobar.html#method-gtkinfobar--set-default-response">
+        <ANCHOR id="method-gtkinfobar--response" href="pygtk/class-gtkinfobar.html#method-gtkinfobar--response">
+        <ANCHOR id="method-gtkinfobar--set-message-type" href="pygtk/class-gtkinfobar.html#method-gtkinfobar--set-message-type">
+        <ANCHOR id="method-gtkinfobar--get-message-type" href="pygtk/class-gtkinfobar.html#method-gtkinfobar--get-message-type">
+        <ANCHOR id="signal-gtkinfobar--close" href="pygtk/class-gtkinfobar.html#signal-gtkinfobar--close">
+        <ANCHOR id="signal-gtkinfobar--response" href="pygtk/class-gtkinfobar.html#signal-gtkinfobar--response">
         <ANCHOR id="class-gtkinputdialog" href="pygtk/class-gtkinputdialog.html">
         <ANCHOR id="properties-gtkinputdialog" href="pygtk/class-gtkinputdialog.html#properties-gtkinputdialog">
         <ANCHOR id="style-properties-gtkinputdialog" href="pygtk/class-gtkinputdialog.html#style-properties-gtkinputdialog">
@@ -1565,6 +1692,13 @@
         <ANCHOR id="method-gtklabel--get-max-width-chars" href="pygtk/class-gtklabel.html#method-gtklabel--get-max-width-chars">
         <ANCHOR id="method-gtklabel--set-angle" href="pygtk/class-gtklabel.html#method-gtklabel--set-angle">
         <ANCHOR id="method-gtklabel--get-angle" href="pygtk/class-gtklabel.html#method-gtklabel--get-angle">
+        <ANCHOR id="method-gtklabel--get-current-uri" href="pygtk/class-gtklabel.html#method-gtklabel--get-current-uri">
+        <ANCHOR id="method-gtklabel--set-track-visited-links" href="pygtk/class-gtklabel.html#method-gtklabel--set-track-visited-links">
+        <ANCHOR id="method-gtklabel--get-track-visited-links" href="pygtk/class-gtklabel.html#method-gtklabel--get-track-visited-links">
+        <ANCHOR id="method-gtklabel--set-line-wrap-mode" href="pygtk/class-gtklabel.html#method-gtklabel--set-line-wrap-mode">
+        <ANCHOR id="method-gtklabel--get-line-wrap-mode" href="pygtk/class-gtklabel.html#method-gtklabel--get-line-wrap-mode">
+        <ANCHOR id="signal-gtklabel--activate-current-link" href="pygtk/class-gtklabel.html#signal-gtklabel--activate-current-link">
+        <ANCHOR id="signal-gtklabel--activate-link" href="pygtk/class-gtklabel.html#signal-gtklabel--activate-link">
         <ANCHOR id="signal-gtklabel--copy-clipboard" href="pygtk/class-gtklabel.html#signal-gtklabel--copy-clipboard">
         <ANCHOR id="signal-gtklabel--move-cursor" href="pygtk/class-gtklabel.html#signal-gtklabel--move-cursor">
         <ANCHOR id="signal-gtklabel--populate-popup" href="pygtk/class-gtklabel.html#signal-gtklabel--populate-popup">
@@ -1639,6 +1773,8 @@
         <ANCHOR id="method-gtkmenu--attach" href="pygtk/class-gtkmenu.html#method-gtkmenu--attach">
         <ANCHOR id="method-gtkmenu--set-monitor" href="pygtk/class-gtkmenu.html#method-gtkmenu--set-monitor">
         <ANCHOR id="method-gtkmenu--get-monitor" href="pygtk/class-gtkmenu.html#method-gtkmenu--get-monitor">
+        <ANCHOR id="method-gtkmenu--set-reserve-toggle-size" href="pygtk/class-gtkmenu.html#method-gtkmenu--set-reserve-toggle-size">
+        <ANCHOR id="method-gtkmenu--get-reserve-toggle-size" href="pygtk/class-gtkmenu.html#method-gtkmenu--get-reserve-toggle-size">
         <ANCHOR id="signal-gtkmenu--move-scroll" href="pygtk/class-gtkmenu.html#signal-gtkmenu--move-scroll">
         <ANCHOR id="class-gtkmenubar" href="pygtk/class-gtkmenubar.html">
         <ANCHOR id="properties-gtkmenubar" href="pygtk/class-gtkmenubar.html#properties-gtkmenubar">
@@ -1666,6 +1802,10 @@
         <ANCHOR id="method-gtkmenuitem--get-right-justified" href="pygtk/class-gtkmenuitem.html#method-gtkmenuitem--get-right-justified">
         <ANCHOR id="method-gtkmenuitem--set-accel-path" href="pygtk/class-gtkmenuitem.html#method-gtkmenuitem--set-accel-path">
         <ANCHOR id="method-gtkmenuitem--get-accel-path" href="pygtk/class-gtkmenuitem.html#method-gtkmenuitem--get-accel-path">
+        <ANCHOR id="method-gtkmenuitem--set-label" href="pygtk/class-gtkmenuitem.html#method-gtkmenuitem--set-label">
+        <ANCHOR id="method-gtkmenuitem--get-label" href="pygtk/class-gtkmenuitem.html#method-gtkmenuitem--get-label">
+        <ANCHOR id="method-gtkmenuitem--set-use-underline" href="pygtk/class-gtkmenuitem.html#method-gtkmenuitem--set-use-underline">
+        <ANCHOR id="method-gtkmenuitem--get-use-underline" href="pygtk/class-gtkmenuitem.html#method-gtkmenuitem--get-use-underline">
         <ANCHOR id="signal-gtkmenuitem--activate" href="pygtk/class-gtkmenuitem.html#signal-gtkmenuitem--activate">
         <ANCHOR id="signal-gtkmenuitem--activate-item" href="pygtk/class-gtkmenuitem.html#signal-gtkmenuitem--activate-item">
         <ANCHOR id="signal-gtkmenuitem--toggle-size-allocate" href="pygtk/class-gtkmenuitem.html#signal-gtkmenuitem--toggle-size-allocate">
@@ -1714,6 +1854,7 @@
         <ANCHOR id="method-gtkmessagedialog--format-secondary-markup" href="pygtk/class-gtkmessagedialog.html#method-gtkmessagedialog--format-secondary-markup">
         <ANCHOR id="method-gtkmessagedialog--set-image" href="pygtk/class-gtkmessagedialog.html#method-gtkmessagedialog--set-image">
         <ANCHOR id="method-gtkmessagedialog--get-image" href="pygtk/class-gtkmessagedialog.html#method-gtkmessagedialog--get-image">
+        <ANCHOR id="method-gtkmessagedialog--get-message-area" href="pygtk/class-gtkmessagedialog.html#method-gtkmessagedialog--get-message-area">
         <ANCHOR id="class-gtkmisc" href="pygtk/class-gtkmisc.html">
         <ANCHOR id="properties-gtkmisc" href="pygtk/class-gtkmisc.html#properties-gtkmisc">
         <ANCHOR id="style-properties-gtkmisc" href="pygtk/class-gtkmisc.html#style-properties-gtkmisc">
@@ -1730,7 +1871,6 @@
         <ANCHOR id="method-gtkmountoperation--is-showing" href="pygtk/class-gtkmountoperation.html#method-gtkmountoperation--is-showing">
         <ANCHOR id="method-gtkmountoperation--set-parent" href="pygtk/class-gtkmountoperation.html#method-gtkmountoperation--set-parent">
         <ANCHOR id="method-gtkmountoperation--set-screen" href="pygtk/class-gtkmountoperation.html#method-gtkmountoperation--set-screen">
-        <ANCHOR id="function-gtk--show-uri" href="pygtk/class-gtkmountoperation.html#function-gtk--show-uri">
         <ANCHOR id="class-gtknotebook" href="pygtk/class-gtknotebook.html">
         <ANCHOR id="properties-gtknotebook" href="pygtk/class-gtknotebook.html#properties-gtknotebook">
         <ANCHOR id="style-properties-gtknotebook" href="pygtk/class-gtknotebook.html#style-properties-gtknotebook">
@@ -1779,6 +1919,12 @@
         <ANCHOR id="method-gtknotebook--set-tab-reorderable" href="pygtk/class-gtknotebook.html#method-gtknotebook--set-tab-reorderable">
         <ANCHOR id="method-gtknotebook--get-tab-detachable" href="pygtk/class-gtknotebook.html#method-gtknotebook--get-tab-detachable">
         <ANCHOR id="method-gtknotebook--set-tab-detachable" href="pygtk/class-gtknotebook.html#method-gtknotebook--set-tab-detachable">
+        <ANCHOR id="method-gtknotebook--set-group-name" href="pygtk/class-gtknotebook.html#method-gtknotebook--set-group-name">
+        <ANCHOR id="method-gtknotebook--get-group-name" href="pygtk/class-gtknotebook.html#method-gtknotebook--get-group-name">
+        <ANCHOR id="method-gtknotebook--get-tab-hborder" href="pygtk/class-gtknotebook.html#method-gtknotebook--get-tab-hborder">
+        <ANCHOR id="method-gtknotebook--get-tab-vborder" href="pygtk/class-gtknotebook.html#method-gtknotebook--get-tab-vborder">
+        <ANCHOR id="method-gtknotebook--get-action-widget" href="pygtk/class-gtknotebook.html#method-gtknotebook--get-action-widget">
+        <ANCHOR id="method-gtknotebook--set-action-widget" href="pygtk/class-gtknotebook.html#method-gtknotebook--set-action-widget">
         <ANCHOR id="function-gtk--notebook-set-window-creation-hook" href="pygtk/class-gtknotebook.html#function-gtk--notebook-set-window-creation-hook">
         <ANCHOR id="signal-gtknotebook--change-current-page" href="pygtk/class-gtknotebook.html#signal-gtknotebook--change-current-page">
         <ANCHOR id="signal-gtknotebook--create-window" href="pygtk/class-gtknotebook.html#signal-gtknotebook--create-window">
@@ -1801,6 +1947,12 @@
         <ANCHOR id="function-gtk--binding-entry-add-signal" href="pygtk/class-gtkobject.html#function-gtk--binding-entry-add-signal">
         <ANCHOR id="function-gtk--binding-entry-remove" href="pygtk/class-gtkobject.html#function-gtk--binding-entry-remove">
         <ANCHOR id="signal-gtkobject--destroy" href="pygtk/class-gtkobject.html#signal-gtkobject--destroy">
+        <ANCHOR id="class-gtkoffscreenwindow" href="pygtk/class-gtkoffscreenwindow.html">
+        <ANCHOR id="properties-gtkoffscreenwindow" href="pygtk/class-gtkoffscreenwindow.html#properties-gtkoffscreenwindow">
+        <ANCHOR id="style-properties-gtkoffscreenwindow" href="pygtk/class-gtkoffscreenwindow.html#style-properties-gtkoffscreenwindow">
+        <ANCHOR id="signal-prototypes-gtkoffscreenwindow" href="pygtk/class-gtkoffscreenwindow.html#signal-prototypes-gtkoffscreenwindow">
+        <ANCHOR id="method-gtkoffscreenwindow--get-pixmap" href="pygtk/class-gtkoffscreenwindow.html#method-gtkoffscreenwindow--get-pixmap">
+        <ANCHOR id="method-gtkoffscreenwindow--get-pixbuf" href="pygtk/class-gtkoffscreenwindow.html#method-gtkoffscreenwindow--get-pixbuf">
         <ANCHOR id="class-gtkoptionmenu" href="pygtk/class-gtkoptionmenu.html">
         <ANCHOR id="properties-gtkoptionmenu" href="pygtk/class-gtkoptionmenu.html#properties-gtkoptionmenu">
         <ANCHOR id="style-properties-gtkoptionmenu" href="pygtk/class-gtkoptionmenu.html#style-properties-gtkoptionmenu">
@@ -1922,6 +2074,15 @@
         <ANCHOR id="method-gtkprintoperation--get-status-string" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--get-status-string">
         <ANCHOR id="method-gtkprintoperation--is-finished" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--is-finished">
         <ANCHOR id="method-gtkprintoperation--cancel" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--cancel">
+        <ANCHOR id="method-gtkprintoperation--set-support-selection" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--set-support-selection">
+        <ANCHOR id="method-gtkprintoperation--get-support-selection" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--get-support-selection">
+        <ANCHOR id="method-gtkprintoperation--set-has-selection" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--set-has-selection">
+        <ANCHOR id="method-gtkprintoperation--get-has-selection" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--get-has-selection">
+        <ANCHOR id="method-gtkprintoperation--set-embed-page-setup" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--set-embed-page-setup">
+        <ANCHOR id="method-gtkprintoperation--get-embed-page-setup" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--get-embed-page-setup">
+        <ANCHOR id="method-gtkprintoperation--get-n-pages-to-print" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--get-n-pages-to-print">
+        <ANCHOR id="method-gtkprintoperation--draw-page-finish" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--draw-page-finish">
+        <ANCHOR id="method-gtkprintoperation--set-defer-drawing" href="pygtk/class-gtkprintoperation.html#method-gtkprintoperation--set-defer-drawing">
         <ANCHOR id="signal-gtkprintoperation--begin-print" href="pygtk/class-gtkprintoperation.html#signal-gtkprintoperation--begin-print">
         <ANCHOR id="signal-gtkprintoperation--create-custom-widget" href="pygtk/class-gtkprintoperation.html#signal-gtkprintoperation--create-custom-widget">
         <ANCHOR id="signal-gtkprintoperation--custom-widget-apply" href="pygtk/class-gtkprintoperation.html#signal-gtkprintoperation--custom-widget-apply">
@@ -2006,6 +2167,11 @@
         <ANCHOR id="method-gtkprintsettings--get-number-up-layout" href="pygtk/class-gtkprintsettings.html#method-gtkprintsettings--get-number-up-layout">
         <ANCHOR id="method-gtkprintsettings--set-number-up-layout" href="pygtk/class-gtkprintsettings.html#method-gtkprintsettings--set-number-up-layout">
         <ANCHOR id="method-gtkprintsettings--load-file" href="pygtk/class-gtkprintsettings.html#method-gtkprintsettings--load-file">
+        <ANCHOR id="method-gtkprintsettings--get-resolution-x" href="pygtk/class-gtkprintsettings.html#method-gtkprintsettings--get-resolution-x">
+        <ANCHOR id="method-gtkprintsettings--get-resolution-y" href="pygtk/class-gtkprintsettings.html#method-gtkprintsettings--get-resolution-y">
+        <ANCHOR id="method-gtkprintsettings--set-resolution-xy" href="pygtk/class-gtkprintsettings.html#method-gtkprintsettings--set-resolution-xy">
+        <ANCHOR id="method-gtkprintsettings--get-printer-lpi" href="pygtk/class-gtkprintsettings.html#method-gtkprintsettings--get-printer-lpi">
+        <ANCHOR id="method-gtkprintsettings--set-printer-lpi" href="pygtk/class-gtkprintsettings.html#method-gtkprintsettings--set-printer-lpi">
         <ANCHOR id="function-gtk--print-settings-new-from-file" href="pygtk/class-gtkprintsettings.html#function-gtk--print-settings-new-from-file">
         <ANCHOR id="class-gtkprogressbar" href="pygtk/class-gtkprogressbar.html">
         <ANCHOR id="properties-gtkprogressbar" href="pygtk/class-gtkprogressbar.html#properties-gtkprogressbar">
@@ -2029,6 +2195,7 @@
         <ANCHOR id="constructor-gtkradioaction" href="pygtk/class-gtkradioaction.html#constructor-gtkradioaction">
         <ANCHOR id="method-gtkradioaction--set-group" href="pygtk/class-gtkradioaction.html#method-gtkradioaction--set-group">
         <ANCHOR id="method-gtkradioaction--get-group" href="pygtk/class-gtkradioaction.html#method-gtkradioaction--get-group">
+        <ANCHOR id="method-gtkradioaction--set-current-value" href="pygtk/class-gtkradioaction.html#method-gtkradioaction--set-current-value">
         <ANCHOR id="method-gtkradioaction--get-current-value" href="pygtk/class-gtkradioaction.html#method-gtkradioaction--get-current-value">
         <ANCHOR id="signal-gtkradioaction--changed" href="pygtk/class-gtkradioaction.html#signal-gtkradioaction--changed">
         <ANCHOR id="class-gtkradiobutton" href="pygtk/class-gtkradiobutton.html">
@@ -2074,6 +2241,19 @@
         <ANCHOR id="method-gtkrange--get-restrict-to-fill-level" href="pygtk/class-gtkrange.html#method-gtkrange--get-restrict-to-fill-level">
         <ANCHOR id="method-gtkrange--set-show-fill-level" href="pygtk/class-gtkrange.html#method-gtkrange--set-show-fill-level">
         <ANCHOR id="method-gtkrange--get-show-fill-level" href="pygtk/class-gtkrange.html#method-gtkrange--get-show-fill-level">
+        <ANCHOR id="method-gtkrange--set-round-digits" href="pygtk/class-gtkrange.html#method-gtkrange--set-round-digits">
+        <ANCHOR id="method-gtkrange--get-round-digits" href="pygtk/class-gtkrange.html#method-gtkrange--get-round-digits">
+        <ANCHOR id="method-gtkrange--set-min-slider-size" href="pygtk/class-gtkrange.html#method-gtkrange--set-min-slider-size">
+        <ANCHOR id="method-gtkrange--get-min-slider-size" href="pygtk/class-gtkrange.html#method-gtkrange--get-min-slider-size">
+        <ANCHOR id="method-gtkrange--get-range-rect" href="pygtk/class-gtkrange.html#method-gtkrange--get-range-rect">
+        <ANCHOR id="method-gtkrange--set-slider-size-fixed" href="pygtk/class-gtkrange.html#method-gtkrange--set-slider-size-fixed">
+        <ANCHOR id="method-gtkrange--get-slider-size-fixed" href="pygtk/class-gtkrange.html#method-gtkrange--get-slider-size-fixed">
+        <ANCHOR id="method-gtkrange--set-flippable" href="pygtk/class-gtkrange.html#method-gtkrange--set-flippable">
+        <ANCHOR id="method-gtkrange--get-flippable" href="pygtk/class-gtkrange.html#method-gtkrange--get-flippable">
+        <ANCHOR id="method-gtkrange--set-lower-stepper-sensitivity" href="pygtk/class-gtkrange.html#method-gtkrange--set-lower-stepper-sensitivity">
+        <ANCHOR id="method-gtkrange--get-lower-stepper-sensitivity" href="pygtk/class-gtkrange.html#method-gtkrange--get-lower-stepper-sensitivity">
+        <ANCHOR id="method-gtkrange--set-upper-stepper-sensitivity" href="pygtk/class-gtkrange.html#method-gtkrange--set-upper-stepper-sensitivity">
+        <ANCHOR id="method-gtkrange--get-upper-stepper-sensitivity" href="pygtk/class-gtkrange.html#method-gtkrange--get-upper-stepper-sensitivity">
         <ANCHOR id="signal-gtkrange--adjust-bounds" href="pygtk/class-gtkrange.html#signal-gtkrange--adjust-bounds">
         <ANCHOR id="signal-gtkrange--change-value" href="pygtk/class-gtkrange.html#signal-gtkrange--change-value">
         <ANCHOR id="signal-gtkrange--move-slider" href="pygtk/class-gtkrange.html#signal-gtkrange--move-slider">
@@ -2097,6 +2277,7 @@
         <ANCHOR id="function-gtk--rc-get-im-module-path" href="pygtk/class-gtkrcstyle.html#function-gtk--rc-get-im-module-path">
         <ANCHOR id="function-gtk--rc-get-im-module-file" href="pygtk/class-gtkrcstyle.html#function-gtk--rc-get-im-module-file">
         <ANCHOR id="class-gtkrecentaction" href="pygtk/class-gtkrecentaction.html">
+        <ANCHOR id="properties-gtkrecentaction" href="pygtk/class-gtkrecentaction.html#properties-gtkrecentaction">
         <ANCHOR id="constructor-gtkrecentaction" href="pygtk/class-gtkrecentaction.html#constructor-gtkrecentaction">
         <ANCHOR id="method-gtkrecentaction--get-show-numbers" href="pygtk/class-gtkrecentaction.html#method-gtkrecentaction--get-show-numbers">
         <ANCHOR id="method-gtkrecentaction--set-show-numbers" href="pygtk/class-gtkrecentaction.html#method-gtkrecentaction--set-show-numbers">
@@ -2238,6 +2419,8 @@
         <ANCHOR id="method-gtkscale--get-value-pos" href="pygtk/class-gtkscale.html#method-gtkscale--get-value-pos">
         <ANCHOR id="method-gtkscale--get-layout" href="pygtk/class-gtkscale.html#method-gtkscale--get-layout">
         <ANCHOR id="method-gtkscale--get-layout-offsets" href="pygtk/class-gtkscale.html#method-gtkscale--get-layout-offsets">
+        <ANCHOR id="method-gtkscale--add-mark" href="pygtk/class-gtkscale.html#method-gtkscale--add-mark">
+        <ANCHOR id="method-gtkscale--clear-marks" href="pygtk/class-gtkscale.html#method-gtkscale--clear-marks">
         <ANCHOR id="signal-gtkscale--format-value" href="pygtk/class-gtkscale.html#signal-gtkscale--format-value">
         <ANCHOR id="class-gtkscalebutton" href="pygtk/class-gtkscalebutton.html">
         <ANCHOR id="properties-gtkscalebutton" href="pygtk/class-gtkscalebutton.html#properties-gtkscalebutton">
@@ -2343,6 +2526,7 @@
         <ANCHOR id="method-gtksizegroup--get-ignore-hidden" href="pygtk/class-gtksizegroup.html#method-gtksizegroup--get-ignore-hidden">
         <ANCHOR id="method-gtksizegroup--add-widget" href="pygtk/class-gtksizegroup.html#method-gtksizegroup--add-widget">
         <ANCHOR id="method-gtksizegroup--remove-widget" href="pygtk/class-gtksizegroup.html#method-gtksizegroup--remove-widget">
+        <ANCHOR id="method-gtksizegroup--get-widgets" href="pygtk/class-gtksizegroup.html#method-gtksizegroup--get-widgets">
         <ANCHOR id="class-gtksocket" href="pygtk/class-gtksocket.html">
         <ANCHOR id="properties-gtksocket" href="pygtk/class-gtksocket.html#properties-gtksocket">
         <ANCHOR id="style-properties-gtksocket" href="pygtk/class-gtksocket.html#style-properties-gtksocket">
@@ -2385,6 +2569,12 @@
         <ANCHOR id="signal-gtkspinbutton--output" href="pygtk/class-gtkspinbutton.html#signal-gtkspinbutton--output">
         <ANCHOR id="signal-gtkspinbutton--value-changed" href="pygtk/class-gtkspinbutton.html#signal-gtkspinbutton--value-changed">
         <ANCHOR id="signal-gtkspinbutton--wrapped" href="pygtk/class-gtkspinbutton.html#signal-gtkspinbutton--wrapped">
+        <ANCHOR id="class-gtkspinner" href="pygtk/class-gtkspinner.html">
+        <ANCHOR id="properties-gtkspinner" href="pygtk/class-gtkspinner.html#properties-gtkspinner">
+        <ANCHOR id="style-properties-gtkspinner" href="pygtk/class-gtkspinner.html#style-properties-gtkspinner">
+        <ANCHOR id="signal-prototypes-gtkspinner" href="pygtk/class-gtkspinner.html#signal-prototypes-gtkspinner">
+        <ANCHOR id="method-gtkspinner--start" href="pygtk/class-gtkspinner.html#method-gtkspinner--start">
+        <ANCHOR id="method-gtkspinner--stop" href="pygtk/class-gtkspinner.html#method-gtkspinner--stop">
         <ANCHOR id="class-gtkstatusbar" href="pygtk/class-gtkstatusbar.html">
         <ANCHOR id="properties-gtkstatusbar" href="pygtk/class-gtkstatusbar.html#properties-gtkstatusbar">
         <ANCHOR id="style-properties-gtkstatusbar" href="pygtk/class-gtkstatusbar.html#style-properties-gtkstatusbar">
@@ -2396,8 +2586,10 @@
         <ANCHOR id="method-gtkstatusbar--pop" href="pygtk/class-gtkstatusbar.html#method-gtkstatusbar--pop">
         <ANCHOR id="method-gtkstatusbar--remove-message" href="pygtk/class-gtkstatusbar.html#method-gtkstatusbar--remove-message">
         <ANCHOR id="method-gtkstatusbar--remove" href="pygtk/class-gtkstatusbar.html#method-gtkstatusbar--remove">
+        <ANCHOR id="method-gtkstatusbar--remove-all" href="pygtk/class-gtkstatusbar.html#method-gtkstatusbar--remove-all">
         <ANCHOR id="method-gtkstatusbar--set-has-resize-grip" href="pygtk/class-gtkstatusbar.html#method-gtkstatusbar--set-has-resize-grip">
         <ANCHOR id="method-gtkstatusbar--get-has-resize-grip" href="pygtk/class-gtkstatusbar.html#method-gtkstatusbar--get-has-resize-grip">
+        <ANCHOR id="method-gtkstatusbar--get-message-area" href="pygtk/class-gtkstatusbar.html#method-gtkstatusbar--get-message-area">
         <ANCHOR id="signal-gtkstatusbar--text-popped" href="pygtk/class-gtkstatusbar.html#signal-gtkstatusbar--text-popped">
         <ANCHOR id="signal-gtkstatusbar--text-pushed" href="pygtk/class-gtkstatusbar.html#signal-gtkstatusbar--text-pushed">
         <ANCHOR id="class-gtkstatusicon" href="pygtk/class-gtkstatusicon.html">
@@ -2431,6 +2623,15 @@
         <ANCHOR id="function-gtk--status-icon-new-from-stock" href="pygtk/class-gtkstatusicon.html#function-gtk--status-icon-new-from-stock">
         <ANCHOR id="function-gtk--status-icon-new-from-icon-name" href="pygtk/class-gtkstatusicon.html#function-gtk--status-icon-new-from-icon-name">
         <ANCHOR id="function-gtk--status-icon-position-menu" href="pygtk/class-gtkstatusicon.html#function-gtk--status-icon-position-menu">
+        <ANCHOR id="method-gtkstatusicon--set-name" href="pygtk/class-gtkstatusicon.html#method-gtkstatusicon--set-name">
+        <ANCHOR id="method-gtkstatusicon--set-title" href="pygtk/class-gtkstatusicon.html#method-gtkstatusicon--set-title">
+        <ANCHOR id="method-gtkstatusicon--get-title" href="pygtk/class-gtkstatusicon.html#method-gtkstatusicon--get-title">
+        <ANCHOR id="method-gtkstatusicon--set-has-tooltip" href="pygtk/class-gtkstatusicon.html#method-gtkstatusicon--set-has-tooltip">
+        <ANCHOR id="method-gtkstatusicon--get-has-tooltip" href="pygtk/class-gtkstatusicon.html#method-gtkstatusicon--get-has-tooltip">
+        <ANCHOR id="method-gtkstatusicon--set-tooltip-text" href="pygtk/class-gtkstatusicon.html#method-gtkstatusicon--set-tooltip-text">
+        <ANCHOR id="method-gtkstatusicon--get-tooltip-text" href="pygtk/class-gtkstatusicon.html#method-gtkstatusicon--get-tooltip-text">
+        <ANCHOR id="method-gtkstatusicon--set-tooltip-markup" href="pygtk/class-gtkstatusicon.html#method-gtkstatusicon--set-tooltip-markup">
+        <ANCHOR id="method-gtkstatusicon--get-tooltip-markup" href="pygtk/class-gtkstatusicon.html#method-gtkstatusicon--get-tooltip-markup">
         <ANCHOR id="signal-gtkstatusicon--activate" href="pygtk/class-gtkstatusicon.html#signal-gtkstatusicon--activate">
         <ANCHOR id="signal-gtkstatusicon--popup-menu" href="pygtk/class-gtkstatusicon.html#signal-gtkstatusicon--popup-menu">
         <ANCHOR id="signal-gtkstatusicon--size-changed" href="pygtk/class-gtkstatusicon.html#signal-gtkstatusicon--size-changed">
@@ -2444,6 +2645,7 @@
         <ANCHOR id="method-gtkstyle--set-background" href="pygtk/class-gtkstyle.html#method-gtkstyle--set-background">
         <ANCHOR id="method-gtkstyle--apply-default-background" href="pygtk/class-gtkstyle.html#method-gtkstyle--apply-default-background">
         <ANCHOR id="method-gtkstyle--lookup-icon-set" href="pygtk/class-gtkstyle.html#method-gtkstyle--lookup-icon-set">
+        <ANCHOR id="method-gtkstyle--lookup-color" href="pygtk/class-gtkstyle.html#method-gtkstyle--lookup-color">
         <ANCHOR id="method-gtkstyle--render-icon" href="pygtk/class-gtkstyle.html#method-gtkstyle--render-icon">
         <ANCHOR id="method-gtkstyle--paint-hline" href="pygtk/class-gtkstyle.html#method-gtkstyle--paint-hline">
         <ANCHOR id="method-gtkstyle--paint-vline" href="pygtk/class-gtkstyle.html#method-gtkstyle--paint-vline">
@@ -2581,6 +2783,7 @@
         <ANCHOR id="signal-gtktextbuffer--mark-deleted" href="pygtk/class-gtktextbuffer.html#signal-gtktextbuffer--mark-deleted">
         <ANCHOR id="signal-gtktextbuffer--mark-set" href="pygtk/class-gtktextbuffer.html#signal-gtktextbuffer--mark-set">
         <ANCHOR id="signal-gtktextbuffer--modified-changed" href="pygtk/class-gtktextbuffer.html#signal-gtktextbuffer--modified-changed">
+        <ANCHOR id="signal-gtktextbuffer--paste-done" href="pygtk/class-gtktextbuffer.html#signal-gtktextbuffer--paste-done">
         <ANCHOR id="signal-gtktextbuffer--remove-tag" href="pygtk/class-gtktextbuffer.html#signal-gtktextbuffer--remove-tag">
         <ANCHOR id="class-gtktextchildanchor" href="pygtk/class-gtktextchildanchor.html">
         <ANCHOR id="signal-prototypes-gtktextchildanchor" href="pygtk/class-gtktextchildanchor.html#signal-prototypes-gtktextchildanchor">
@@ -2764,6 +2967,8 @@
         <ANCHOR id="method-gtktextview--set-tabs" href="pygtk/class-gtktextview.html#method-gtktextview--set-tabs">
         <ANCHOR id="method-gtktextview--get-tabs" href="pygtk/class-gtktextview.html#method-gtktextview--get-tabs">
         <ANCHOR id="method-gtktextview--get-default-attributes" href="pygtk/class-gtktextview.html#method-gtktextview--get-default-attributes">
+        <ANCHOR id="method-gtktextview--get-hadjustment" href="pygtk/class-gtktextview.html#method-gtktextview--get-hadjustment">
+        <ANCHOR id="method-gtktextview--get-vadjustment" href="pygtk/class-gtktextview.html#method-gtktextview--get-vadjustment">
         <ANCHOR id="signal-gtktextview--backspace" href="pygtk/class-gtktextview.html#signal-gtktextview--backspace">
         <ANCHOR id="signal-gtktextview--copy-clipboard" href="pygtk/class-gtktextview.html#signal-gtktextview--copy-clipboard">
         <ANCHOR id="signal-gtktextview--cut-clipboard" href="pygtk/class-gtktextview.html#signal-gtktextview--cut-clipboard">
@@ -2902,9 +3107,59 @@
         <ANCHOR id="method-gtktoolitem--set-tooltip-markup" href="pygtk/class-gtktoolitem.html#method-gtktoolitem--set-tooltip-markup">
         <ANCHOR id="method-gtktoolitem--set-tooltip-text" href="pygtk/class-gtktoolitem.html#method-gtktoolitem--set-tooltip-text">
         <ANCHOR id="method-gtktoolitem--toolbar-reconfigured" href="pygtk/class-gtktoolitem.html#method-gtktoolitem--toolbar-reconfigured">
+        <ANCHOR id="method-gtktoolitem--get-ellipsize-mode" href="pygtk/class-gtktoolitem.html#method-gtktoolitem--get-ellipsize-mode">
+        <ANCHOR id="method-gtktoolitem--get-text-alignment" href="pygtk/class-gtktoolitem.html#method-gtktoolitem--get-text-alignment">
+        <ANCHOR id="method-gtktoolitem--get-text-orientation" href="pygtk/class-gtktoolitem.html#method-gtktoolitem--get-text-orientation">
+        <ANCHOR id="method-gtktoolitem--get-text-size-group" href="pygtk/class-gtktoolitem.html#method-gtktoolitem--get-text-size-group">
         <ANCHOR id="signal-gtktoolitem--create-menu-proxy" href="pygtk/class-gtktoolitem.html#signal-gtktoolitem--create-menu-proxy">
         <ANCHOR id="signal-gtktoolitem--set-tooltip" href="pygtk/class-gtktoolitem.html#signal-gtktoolitem--set-tooltip">
         <ANCHOR id="signal-gtktoolitem--toolbar-reconfigured" href="pygtk/class-gtktoolitem.html#signal-gtktoolitem--toolbar-reconfigured">
+        <ANCHOR id="class-gtktoolitemgroup" href="pygtk/class-gtktoolitemgroup.html">
+        <ANCHOR id="properties-gtktoolitemgroup" href="pygtk/class-gtktoolitemgroup.html#properties-gtktoolitemgroup">
+        <ANCHOR id="child-properties-gtktoolitemgroup" href="pygtk/class-gtktoolitemgroup.html#child-properties-gtktoolitemgroup">
+        <ANCHOR id="style-properties-gtktoolitemgroup" href="pygtk/class-gtktoolitemgroup.html#style-properties-gtktoolitemgroup">
+        <ANCHOR id="signal-prototypes-gtktoolitemgroup" href="pygtk/class-gtktoolitemgroup.html#signal-prototypes-gtktoolitemgroup">
+        <ANCHOR id="method-gtktoolitemgroup--set-label" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--set-label">
+        <ANCHOR id="method-gtktoolitemgroup--set-label-widget" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--set-label-widget">
+        <ANCHOR id="method-gtktoolitemgroup--set-collapsed" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--set-collapsed">
+        <ANCHOR id="method-gtktoolitemgroup--set-ellipsize" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--set-ellipsize">
+        <ANCHOR id="method-gtktoolitemgroup--set-header-relief" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--set-header-relief">
+        <ANCHOR id="method-gtktoolitemgroup--get-label" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--get-label">
+        <ANCHOR id="method-gtktoolitemgroup--get-label-widget" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--get-label-widget">
+        <ANCHOR id="method-gtktoolitemgroup--get-collapsed" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--get-collapsed">
+        <ANCHOR id="method-gtktoolitemgroup--get-ellipsize" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--get-ellipsize">
+        <ANCHOR id="method-gtktoolitemgroup--get-header-relief" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--get-header-relief">
+        <ANCHOR id="method-gtktoolitemgroup--insert" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--insert">
+        <ANCHOR id="method-gtktoolitemgroup--set-item-position" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--set-item-position">
+        <ANCHOR id="method-gtktoolitemgroup--get-item-position" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--get-item-position">
+        <ANCHOR id="method-gtktoolitemgroup--get-n-items" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--get-n-items">
+        <ANCHOR id="method-gtktoolitemgroup--get-nth-item" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--get-nth-item">
+        <ANCHOR id="method-gtktoolitemgroup--get-drop-item" href="pygtk/class-gtktoolitemgroup.html#method-gtktoolitemgroup--get-drop-item">
+        <ANCHOR id="class-gtktoolpalette" href="pygtk/class-gtktoolpalette.html">
+        <ANCHOR id="properties-gtktoolpalette" href="pygtk/class-gtktoolpalette.html#properties-gtktoolpalette">
+        <ANCHOR id="child-properties-gtktoolpalette" href="pygtk/class-gtktoolpalette.html#child-properties-gtktoolpalette">
+        <ANCHOR id="style-properties-gtktoolpalette" href="pygtk/class-gtktoolpalette.html#style-properties-gtktoolpalette">
+        <ANCHOR id="signal-prototypes-gtktoolpalette" href="pygtk/class-gtktoolpalette.html#signal-prototypes-gtktoolpalette">
+        <ANCHOR id="method-gtktoolpalette--set-group-position" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--set-group-position">
+        <ANCHOR id="method-gtktoolpalette--set-exclusive" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--set-exclusive">
+        <ANCHOR id="method-gtktoolpalette--set-expand" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--set-expand">
+        <ANCHOR id="method-gtktoolpalette--get-group-position" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--get-group-position">
+        <ANCHOR id="method-gtktoolpalette--get-exclusive" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--get-exclusive">
+        <ANCHOR id="method-gtktoolpalette--get-expand" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--get-expand">
+        <ANCHOR id="method-gtktoolpalette--set-icon-size" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--set-icon-size">
+        <ANCHOR id="method-gtktoolpalette--unset-icon-size" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--unset-icon-size">
+        <ANCHOR id="method-gtktoolpalette--set-style" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--set-style">
+        <ANCHOR id="method-gtktoolpalette--unset-style" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--unset-style">
+        <ANCHOR id="method-gtktoolpalette--get-icon-size" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--get-icon-size">
+        <ANCHOR id="method-gtktoolpalette--get-style" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--get-style">
+        <ANCHOR id="method-gtktoolpalette--get-drop-item" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--get-drop-item">
+        <ANCHOR id="method-gtktoolpalette--get-drop-group" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--get-drop-group">
+        <ANCHOR id="method-gtktoolpalette--get-drag-item" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--get-drag-item">
+        <ANCHOR id="method-gtktoolpalette--set-drag-source" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--set-drag-source">
+        <ANCHOR id="method-gtktoolpalette--add-drag-dest" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--add-drag-dest">
+        <ANCHOR id="method-gtktoolpalette--get-hadjustment" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--get-hadjustment">
+        <ANCHOR id="method-gtktoolpalette--get-vadjustment" href="pygtk/class-gtktoolpalette.html#method-gtktoolpalette--get-vadjustment">
+        <ANCHOR id="signal-gtktoolpalette--set-scroll-adjustments" href="pygtk/class-gtktoolpalette.html#signal-gtktoolpalette--set-scroll-adjustments">
         <ANCHOR id="class-gtktoolshell" href="pygtk/class-gtktoolshell.html">
         <ANCHOR id="method-gtktoolshell--get-icon-size" href="pygtk/class-gtktoolshell.html#method-gtktoolshell--get-icon-size">
         <ANCHOR id="method-gtktoolshell--get-orientation" href="pygtk/class-gtktoolshell.html#method-gtktoolshell--get-orientation">
@@ -2916,6 +3171,7 @@
         <ANCHOR id="method-gtktooltip--set-icon" href="pygtk/class-gtktooltip.html#method-gtktooltip--set-icon">
         <ANCHOR id="method-gtktooltip--set-icon-from-icon-name" href="pygtk/class-gtktooltip.html#method-gtktooltip--set-icon-from-icon-name">
         <ANCHOR id="method-gtktooltip--set-icon-from-stock" href="pygtk/class-gtktooltip.html#method-gtktooltip--set-icon-from-stock">
+        <ANCHOR id="method-gtktooltip--set-icon-from-gicon" href="pygtk/class-gtktooltip.html#method-gtktooltip--set-icon-from-gicon">
         <ANCHOR id="method-gtktooltip--set-markup" href="pygtk/class-gtktooltip.html#method-gtktooltip--set-markup">
         <ANCHOR id="method-gtktooltip--set-text" href="pygtk/class-gtktooltip.html#method-gtktooltip--set-text">
         <ANCHOR id="function-gtk--tooltip-trigger-tooltip-query" href="pygtk/class-gtktooltip.html#function-gtk--tooltip-trigger-tooltip-query">
@@ -2977,7 +3233,7 @@
         <ANCHOR id="properties-gtktreemodelfilter" href="pygtk/class-gtktreemodelfilter.html#properties-gtktreemodelfilter">
         <ANCHOR id="signal-prototypes-gtktreemodelfilter" href="pygtk/class-gtktreemodelfilter.html#signal-prototypes-gtktreemodelfilter">
         <ANCHOR id="method-gtktreemodelfilter--set-visible-func" href="pygtk/class-gtktreemodelfilter.html#method-gtktreemodelfilter--set-visible-func">
-        <ANCHOR id="method-gtktreemodelfilter- -set-modify-func" href="pygtk/class-gtktreemodelfilter.html#method-gtktreemodelfilter- -set-modify-func">
+        <ANCHOR id="method-gtktreemodelfilter--set-modify-func" href="pygtk/class-gtktreemodelfilter.html#method-gtktreemodelfilter--set-modify-func">
         <ANCHOR id="method-gtktreemodelfilter--set-visible-column" href="pygtk/class-gtktreemodelfilter.html#method-gtktreemodelfilter--set-visible-column">
         <ANCHOR id="method-gtktreemodelfilter--get-model" href="pygtk/class-gtktreemodelfilter.html#method-gtktreemodelfilter--get-model">
         <ANCHOR id="method-gtktreemodelfilter--convert-child-iter-to-iter" href="pygtk/class-gtktreemodelfilter.html#method-gtktreemodelfilter--convert-child-iter-to-iter">
@@ -3306,11 +3562,14 @@
         <ANCHOR id="method-gtkviewport--set-vadjustment" href="pygtk/class-gtkviewport.html#method-gtkviewport--set-vadjustment">
         <ANCHOR id="method-gtkviewport--set-shadow-type" href="pygtk/class-gtkviewport.html#method-gtkviewport--set-shadow-type">
         <ANCHOR id="method-gtkviewport--get-shadow-type" href="pygtk/class-gtkviewport.html#method-gtkviewport--get-shadow-type">
+        <ANCHOR id="method-gtkviewport--get-bin-window" href="pygtk/class-gtkviewport.html#method-gtkviewport--get-bin-window">
+        <ANCHOR id="method-gtkviewport--get-view-window" href="pygtk/class-gtkviewport.html#method-gtkviewport--get-view-window">
         <ANCHOR id="signal-gtkviewport--set-scroll-adjustments" href="pygtk/class-gtkviewport.html#signal-gtkviewport--set-scroll-adjustments">
         <ANCHOR id="class-gtkwidget" href="pygtk/class-gtkwidget.html">
         <ANCHOR id="properties-gtkwidget" href="pygtk/class-gtkwidget.html#properties-gtkwidget">
         <ANCHOR id="style-properties-gtkwidget" href="pygtk/class-gtkwidget.html#style-properties-gtkwidget">
         <ANCHOR id="signal-prototypes-gtkwidget" href="pygtk/class-gtkwidget.html#signal-prototypes-gtkwidget">
+        <ANCHOR id="method-gtkwidget--set-allocation" href="pygtk/class-gtkwidget.html#method-gtkwidget--set-allocation">
         <ANCHOR id="method-gtkwidget--get-allocation" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-allocation">
         <ANCHOR id="method-gtkwidget--drag-check-threshold" href="pygtk/class-gtkwidget.html#method-gtkwidget--drag-check-threshold">
         <ANCHOR id="method-gtkwidget--drag-get-data" href="pygtk/class-gtkwidget.html#method-gtkwidget--drag-get-data">
@@ -3471,6 +3730,35 @@
         <ANCHOR id="method-gtkwidget--trigger-tooltip-query" href="pygtk/class-gtkwidget.html#method-gtkwidget--trigger-tooltip-query">
         <ANCHOR id="method-gtkwidget--get-snapshot" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-snapshot">
         <ANCHOR id="method-gtkwidget--get-window" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-window">
+        <ANCHOR id="method-gtkwidget--send-focus-change" href="pygtk/class-gtkwidget.html#method-gtkwidget--send-focus-change">
+        <ANCHOR id="method-gtkwidget--set-realized" href="pygtk/class-gtkwidget.html#method-gtkwidget--set-realized">
+        <ANCHOR id="method-gtkwidget--get-realized" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-realized">
+        <ANCHOR id="method-gtkwidget--set-mapped" href="pygtk/class-gtkwidget.html#method-gtkwidget--set-mapped">
+        <ANCHOR id="method-gtkwidget--get-mapped" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-mapped">
+        <ANCHOR id="method-gtkwidget--get-requisition" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-requisition">
+        <ANCHOR id="method-gtkwidget--style-attach" href="pygtk/class-gtkwidget.html#method-gtkwidget--style-attach">
+        <ANCHOR id="method-gtkwidget--has-rc-style" href="pygtk/class-gtkwidget.html#method-gtkwidget--has-rc-style">
+        <ANCHOR id="method-gtkwidget--get-app-paintable" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-app-paintable">
+        <ANCHOR id="method-gtkwidget--set-can-default" href="pygtk/class-gtkwidget.html#method-gtkwidget--set-can-default">
+        <ANCHOR id="method-gtkwidget--get-can-default" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-can-default">
+        <ANCHOR id="method-gtkwidget--set-can-focus" href="pygtk/class-gtkwidget.html#method-gtkwidget--set-can-focus">
+        <ANCHOR id="method-gtkwidget--get-can-focus" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-can-focus">
+        <ANCHOR id="method-gtkwidget--get-double-buffered" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-double-buffered">
+        <ANCHOR id="method-gtkwidget--set-has-window" href="pygtk/class-gtkwidget.html#method-gtkwidget--set-has-window">
+        <ANCHOR id="method-gtkwidget--get-has-window" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-has-window">
+        <ANCHOR id="method-gtkwidget--set-receives-default" href="pygtk/class-gtkwidget.html#method-gtkwidget--set-receives-default">
+        <ANCHOR id="method-gtkwidget--get-receives-default" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-receives-default">
+        <ANCHOR id="method-gtkwidget--get-sensitive" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-sensitive">
+        <ANCHOR id="method-gtkwidget--get-state" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-state">
+        <ANCHOR id="method-gtkwidget--set-visible" href="pygtk/class-gtkwidget.html#method-gtkwidget--set-visible">
+        <ANCHOR id="method-gtkwidget--get-visible" href="pygtk/class-gtkwidget.html#method-gtkwidget--get-visible">
+        <ANCHOR id="method-gtkwidget--set-window" href="pygtk/class-gtkwidget.html#method-gtkwidget--set-window">
+        <ANCHOR id="method-gtkwidget--has-default" href="pygtk/class-gtkwidget.html#method-gtkwidget--has-default">
+        <ANCHOR id="method-gtkwidget--has-focus" href="pygtk/class-gtkwidget.html#method-gtkwidget--has-focus">
+        <ANCHOR id="method-gtkwidget--has-grab" href="pygtk/class-gtkwidget.html#method-gtkwidget--has-grab">
+        <ANCHOR id="method-gtkwidget--is-sensitive" href="pygtk/class-gtkwidget.html#method-gtkwidget--is-sensitive">
+        <ANCHOR id="method-gtkwidget--is-toplevel" href="pygtk/class-gtkwidget.html#method-gtkwidget--is-toplevel">
+        <ANCHOR id="method-gtkwidget--is-drawable" href="pygtk/class-gtkwidget.html#method-gtkwidget--is-drawable">
         <ANCHOR id="function-gtk--widget-push-colormap" href="pygtk/class-gtkwidget.html#function-gtk--widget-push-colormap">
         <ANCHOR id="function-gtk--widget-push-composite-child" href="pygtk/class-gtkwidget.html#function-gtk--widget-push-composite-child">
         <ANCHOR id="function-gtk--widget-pop-composite-child" href="pygtk/class-gtkwidget.html#function-gtk--widget-pop-composite-child">
@@ -3602,6 +3890,8 @@
         <ANCHOR id="method-gtkwindow--mnemonic-activate" href="pygtk/class-gtkwindow.html#method-gtkwindow--mnemonic-activate">
         <ANCHOR id="method-gtkwindow--set-mnemonic-modifier" href="pygtk/class-gtkwindow.html#method-gtkwindow--set-mnemonic-modifier">
         <ANCHOR id="method-gtkwindow--get-mnemonic-modifier" href="pygtk/class-gtkwindow.html#method-gtkwindow--get-mnemonic-modifier">
+        <ANCHOR id="method-gtkwindow--set-mnemonics-visible" href="pygtk/class-gtkwindow.html#method-gtkwindow--set-mnemonics-visible">
+        <ANCHOR id="method-gtkwindow--get-mnemonics-visible" href="pygtk/class-gtkwindow.html#method-gtkwindow--get-mnemonics-visible">
         <ANCHOR id="method-gtkwindow--activate-key" href="pygtk/class-gtkwindow.html#method-gtkwindow--activate-key">
         <ANCHOR id="method-gtkwindow--propagate-key-event" href="pygtk/class-gtkwindow.html#method-gtkwindow--propagate-key-event">
         <ANCHOR id="method-gtkwindow--present" href="pygtk/class-gtkwindow.html#method-gtkwindow--present">
@@ -3636,10 +3926,18 @@
         <ANCHOR id="method-gtkwindow--set-deletable" href="pygtk/class-gtkwindow.html#method-gtkwindow--set-deletable">
         <ANCHOR id="method-gtkwindow--get-deletable" href="pygtk/class-gtkwindow.html#method-gtkwindow--get-deletable">
         <ANCHOR id="method-gtkwindow--get-group" href="pygtk/class-gtkwindow.html#method-gtkwindow--get-group">
+        <ANCHOR id="method-gtkwindow--has-group" href="pygtk/class-gtkwindow.html#method-gtkwindow--has-group">
+        <ANCHOR id="method-gtkwindow--get-window-type" href="pygtk/class-gtkwindow.html#method-gtkwindow--get-window-type">
         <ANCHOR id="method-gtkwindow--set-opacity" href="pygtk/class-gtkwindow.html#method-gtkwindow--set-opacity">
         <ANCHOR id="method-gtkwindow--get-opacity" href="pygtk/class-gtkwindow.html#method-gtkwindow--get-opacity">
         <ANCHOR id="method-gtkwindow--set-startup-id" href="pygtk/class-gtkwindow.html#method-gtkwindow--set-startup-id">
         <ANCHOR id="method-gtkwindow--get-default-widget" href="pygtk/class-gtkwindow.html#method-gtkwindow--get-default-widget">
+        <ANCHOR id="method-gtkwindow--set-skip-taskbar-hint" href="pygtk/class-gtkwindow.html#method-gtkwindow--set-skip-taskbar-hint">
+        <ANCHOR id="method-gtkwindow--get-skip-taskbar-hint" href="pygtk/class-gtkwindow.html#method-gtkwindow--get-skip-taskbar-hint">
+        <ANCHOR id="method-gtkwindow--set-skip-pager-hint" href="pygtk/class-gtkwindow.html#method-gtkwindow--set-skip-pager-hint">
+        <ANCHOR id="method-gtkwindow--get-skip-pager-hint" href="pygtk/class-gtkwindow.html#method-gtkwindow--get-skip-pager-hint">
+        <ANCHOR id="method-gtkwindow--set-accept-focus" href="pygtk/class-gtkwindow.html#method-gtkwindow--set-accept-focus">
+        <ANCHOR id="method-gtkwindow--get-accept-focus" href="pygtk/class-gtkwindow.html#method-gtkwindow--get-accept-focus">
         <ANCHOR id="function-gtk--window-set-default-icon-list" href="pygtk/class-gtkwindow.html#function-gtk--window-set-default-icon-list">
         <ANCHOR id="function-gtk--window-set-default-icon" href="pygtk/class-gtkwindow.html#function-gtk--window-set-default-icon">
         <ANCHOR id="function-gtk--window-set-default-icon-from-file" href="pygtk/class-gtkwindow.html#function-gtk--window-set-default-icon-from-file">
@@ -3678,6 +3976,8 @@
         <ANCHOR id="function-gtk--init-check" href="pygtk/gtk-functions.html#function-gtk--init-check">
         <ANCHOR id="function-gtk--remove-log-handlers" href="pygtk/gtk-functions.html#function-gtk--remove-log-handlers">
         <ANCHOR id="function-gtk--add-log-handlers" href="pygtk/gtk-functions.html#function-gtk--add-log-handlers">
+        <ANCHOR id="function-gtk--set-interactive" href="pygtk/gtk-functions.html#function-gtk--set-interactive">
+        <ANCHOR id="function-gtk--show-uri" href="pygtk/gtk-functions.html#function-gtk--show-uri">
         <ANCHOR id="gtk-stock-items" href="pygtk/gtk-stock-items.html">
         <ANCHOR id="function-gtk--stock-add" href="pygtk/gtk-stock-items.html#function-gtk--stock-add">
         <ANCHOR id="function-gtk--stock-lookup" href="pygtk/gtk-stock-items.html#function-gtk--stock-lookup">

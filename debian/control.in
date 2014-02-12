@@ -4,13 +4,12 @@ Priority: optional
 Maintainer: Sebastien Bacher <seb128@debian.org>
 Uploaders: Torsten Landschoff <torsten@debian.org>,
            @GNOME_TEAM@
-Build-Depends: debhelper (>= 5),
-               python-support (>= 0.7.6),
+Build-Depends: debhelper (>= 8),
                gnome-pkg-tools (>= 0.10),
                cdbs,
                autotools-dev,
                xvfb (>= 2:1.6.0), xauth, xfonts-base,
-               python-all-dev (>= 2.5),
+               python-all-dev (>= 2.6.6-3~),
                python-all-dbg,
                libgtk2.0-dev (>= 2.18.0),
                libglib2.0-dev (>= 2.8.0),
@@ -20,34 +19,26 @@ Build-Depends: debhelper (>= 5),
                python-numpy-dbg (>= 1:1.4.1-4~),
                python-cairo-dev (>= 1.0.2),
                python-cairo-dbg (>= 1.0.2),
-               python-gobject-dev (>= 2.16.1),
-               python-gobject-dbg (>= 2.16.1),
+               python-gobject-2-dev (>= 2.21.3),
+               python-gobject-2-dbg (>= 2.21.3),
                xsltproc,
                docbook-xsl,
                gnome-icon-theme
-XS-Python-Version: >= 2.5
-Standards-Version: 3.9.1
-Vcs-Browser: http://svn.debian.org/viewsvn/pkg-gnome/desktop/unstable/pygtk/
-Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/desktop/unstable/pygtk/
+X-Python-Version: >= 2.5
+Standards-Version: 3.9.2
+Vcs-Browser: http://svn.debian.org/viewsvn/pkg-gnome/packages/unstable/pygtk/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/packages/unstable/pygtk/
 Homepage: http://www.pygtk.org/
 
 Package: python-gtk2
 Architecture: any
 Depends: ${python:Depends},
          ${shlibs:Depends},
-         ${misc:Depends}
-Python-Depends: python-cairo (>= 1.0.2-1.1),
-                python-gobject (>= 2.15.3)
+         ${misc:Depends},
+         python-cairo (>= 1.0.2-1.1),
+         python-gobject-2 (>= 2.21.3)
 Suggests: python-gtk2-doc
-Provides: ${python:Provides}
-XB-Python-Version: ${python:Versions}
-Conflicts: python-gdk-imlib,
-           python-glade,
-           python-gnome,
-           python-gtk,
-           python2.3-gtk2,
-           python2.4-gtk2,
-           python-gtk-1.2 (<< 0.6.12-7)
+Breaks: python-gtkglext1 (<< 1.1.0-7~)
 Description: Python bindings for the GTK+ widget set
  This archive contains modules that allow you to use GTK+ in Python
  programs.
@@ -58,12 +49,12 @@ Priority: extra
 Section: debug
 Depends: python-gtk2 (= ${binary:Version}),
          python-glade2 (= ${binary:Version}),
-         python-dbg,
          python-numpy-dbg,
          python-cairo-dbg,
-         python-gobject-dbg,
+         python-gobject-2-dbg,
          ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
+         ${python:Depends}
 Description: Python bindings for the GTK+ widget set (debug extension)
  This archive contains modules that allow you to use GTK+ in Python
  programs.
@@ -75,23 +66,12 @@ Architecture: all
 Depends: ${python:Depends},
          ${misc:Depends},
          python-gtk2 (>= ${source:Version}),
+         python-gtk2 (<< ${source:Version}.1~),
          libglib2.0-dev (>= 2.8),
-         libgtk2.0-dev (>= 2.13.6),
+         libgtk2.0-dev (>= 2.18.0),
          python-dev,
-         python-gobject-dev (>= 2.15.3)
+         python-gobject-2-dev (>= 2.21.3)
 Recommends: python-gtk2-doc
-Replaces: python2.2-gtk2 (<< 1.99.17-4),
-          python2.3-gtk2 (<< 1.99.17-4),
-          python2.2-glade2 (<< 1.99.17-4),
-          python2.3-glade2 (<< 1.99.17-4)
-Conflicts: python2.2-gtk2 (<< 1.99.17-4),
-           python2.3-gtk2 (<< 1.99.17-4),
-           python2.2-glade2 (<< 1.99.17-4),
-           python2.3-glade2 (<< 1.99.17-4),
-           python-gdk-imlib,
-           python-glade,
-           python-gnome,
-           python-gtk
 Description: GTK+ bindings: devel files
  This archive contains files that allow you to build wrappers for addons
  that interoperate with python-gtk2 (pygtk).
@@ -103,13 +83,6 @@ Depends: ${python:Depends},
          ${misc:Depends},
          python-gtk2 (= ${binary:Version})
 Suggests: python-gtk2-doc
-Conflicts: python-gdk-imlib,
-           python-glade,
-           python-gnome,
-           python-gtk,
-           python2.3-glade2,
-           python2.4-glade2
-Provides: ${python:Provides}
 Description: GTK+ bindings: Glade support
  Contains bindings for the glade library from use within Python. Glade
  makes it very easy to create a user interface. In the target
@@ -119,12 +92,10 @@ Description: GTK+ bindings: Glade support
 Package: python-gtk2-doc
 Architecture: all
 Section: doc
-XB-Python-Version: ${python:Versions}
 Depends: ${misc:Depends},
          ${python:Depends},
          python-gtk2,
-Conflicts: python-gtk2 (<< 2.10.4-3)
-Recommends: python-gobject,
+Recommends: python-gobject-2,
             python-cairo,
             python-glade2
 Suggests: devhelp
