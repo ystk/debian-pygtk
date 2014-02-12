@@ -21,6 +21,15 @@
 /* If Gtk 2.18 was found */
 #undef HAVE_GTK_2_18
 
+/* If Gtk 2.20 was found */
+#undef HAVE_GTK_2_20
+
+/* If Gtk 2.22 was found */
+#undef HAVE_GTK_2_22
+
+/* If Gtk 2.24 was found */
+#undef HAVE_GTK_2_24
+
 /* Define to 1 if you have the <inttypes.h> header file. */
 #undef HAVE_INTTYPES_H
 

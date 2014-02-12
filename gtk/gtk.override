@@ -24,6 +24,7 @@ headers
 #define NO_IMPORT_PYGOBJECT
 #include "pygobject.h"
 
+#include <fcntl.h>
 #include <locale.h>
 
 #include <gtk/gtk.h>
@@ -1102,15 +1103,17 @@ override gtk_main noargs
 
   /* This code (pygtk main watch) was copied with minor changes from
    * pygobject/gobject/pygmainloop.c */
+
+static int pipe_fds[2];
+
 typedef struct {
     GSource source;
-    int fds[2];
     GPollFD fd;
 } PySignalWatchSource;
 
 static gboolean
 pygtk_main_watch_prepare(GSource *source,
-			 int     *timeout)
+                         int     *timeout)
 {
     /* Python only invokes signal handlers from the main thread,
      * so if a thread other than the main thread receives the signal
@@ -1118,47 +1121,26 @@ pygtk_main_watch_prepare(GSource *source,
      * do nothing.
      */
 
+#ifdef HAVE_PYSIGNAL_SETWAKEUPFD
+    return FALSE;
+#else /* !HAVE_PYSIGNAL_SETWAKEUPFD */
     /* On Windows g_poll() won't be interrupted by a signal
      * (AFAIK), so we need the timeout there too, even if there's
      * only one thread.
      */
 #ifndef PLATFORM_WIN32
     if (!pyg_threads_enabled)
-	return FALSE;
-#endif
+        return FALSE;
+#endif /* PLATFORM_WIN32 */
 
-#ifdef HAVE_PYSIGNAL_SETWAKEUPFD
-    {
-        PySignalWatchSource *real_source = (PySignalWatchSource *)source;
-
-        if (real_source->fds[0] != 0)
-            return FALSE;
-
-        /* Unfortunately we need to create a new pipe here instead of
-         * reusing the pipe inside the GMainContext.  Ideally an api
-         * should be added to GMainContext which allows us to reuse
-         * that pipe which would suit us perfectly fine.
-         */
-        if (pipe(real_source->fds) < 0)
-            g_error("Cannot create main loop pipe: %s\n",
-                    g_strerror(errno));
-
-        real_source->fd.fd = real_source->fds[0];
-        real_source->fd.events = G_IO_IN | G_IO_HUP | G_IO_ERR;
-        g_source_add_poll(source, &real_source->fd);
-
-        PySignal_SetWakeupFd(real_source->fds[1]);
-    }
-#else /* !HAVE_PYSIGNAL_SETWAKEUPFD */
     /* If we're using 2.5 or an earlier version of python we
      * will default to a timeout every second, be aware,
      * this will cause unnecessary wakeups, see
      * http://bugzilla.gnome.org/show_bug.cgi?id=481569
      */
     *timeout = 1000;
-#endif /* HAVE_PYSIGNAL_SETWAKEUPFD */
-
     return FALSE;
+#endif /* HAVE_PYSIGNAL_SETWAKEUPFD */
 }
 
 static gboolean
@@ -1166,11 +1148,20 @@ pygtk_main_watch_check(GSource *source)
 {
     PyGILState_STATE state;
 
+#ifdef HAVE_PYSIGNAL_SETWAKEUPFD
+    PySignalWatchSource *real_source = (PySignalWatchSource *)source;
+    GPollFD *poll_fd = &real_source->fd;
+    unsigned char dummy;
+    gssize ret;
+    if (poll_fd->revents & G_IO_IN)
+        ret = read(poll_fd->fd, &dummy, 1);
+#endif
+
     state = pyg_gil_state_ensure();
 
     if (PyErr_CheckSignals() == -1 && gtk_main_level() > 0) {
-	PyErr_SetNone(PyExc_KeyboardInterrupt);
-	gtk_main_quit();
+        PyErr_SetNone(PyExc_KeyboardInterrupt);
+        gtk_main_quit();
     }
 
     pyg_gil_state_release(state);
@@ -1188,41 +1179,49 @@ pygtk_main_watch_dispatch(GSource    *source,
     return TRUE;
 }
 
-static void
-pygtk_main_watch_finalize(GSource *source)
-{
-    PySignalWatchSource *real_source = (PySignalWatchSource*)source;
-
-    if (source != NULL) {
-	if (real_source->fds[0] != 0)
-	    close(real_source->fds[0]);
-	
-	if (real_source->fds[1] != 0) {
-#if HAVE_PYSIGNAL_SETWAKEUPFD
-            int  wakeup_fd = PySignal_SetWakeupFd(-1);
-            if (wakeup_fd != real_source->fds[1]) {
-                /* Probably should never happen. */
-                PySignal_SetWakeupFd(wakeup_fd);
-            }
-#endif
-
-            close(real_source->fds[1]);
-        }
-    }
-}
-
 static GSourceFuncs pygtk_main_watch_funcs =
 {
     pygtk_main_watch_prepare,
     pygtk_main_watch_check,
-    pygtk_main_watch_dispatch,
-    pygtk_main_watch_finalize
+    pygtk_main_watch_dispatch
 };
 
 static GSource *
 pygtk_main_watch_new(void)
 {
-    return g_source_new(&pygtk_main_watch_funcs, sizeof(PySignalWatchSource));
+    GSource *source = g_source_new(&pygtk_main_watch_funcs, sizeof(PySignalWatchSource));
+
+#ifdef HAVE_PYSIGNAL_SETWAKEUPFD
+    PySignalWatchSource *real_source = (PySignalWatchSource *)source;
+    int flag;
+
+    /* Unfortunately we need to create a new pipe here instead of
+     * reusing the pipe inside the GMainContext.
+     * Ideally an api should be added to GMainContext which allows us
+     * to reuse that pipe which would suit us perfectly fine.
+     * XXX More efficient than a pipe, we could use an eventfd on Linux
+     * kernels that support it.
+     */
+    gint already_piped = (pipe_fds[0] > 0);
+    if (!already_piped) {
+	if (pipe(pipe_fds) < 0)
+	    g_error("Cannot create main loop pipe: %s\n",
+	            g_strerror(errno));
+
+        /* Make the write end of the fd non blocking */
+        flag = fcntl(pipe_fds[1], F_GETFL, 0);
+        flag |= O_NONBLOCK;
+        fcntl(pipe_fds[1], F_SETFL, flag);
+    }
+
+    real_source->fd.fd = pipe_fds[0];
+    real_source->fd.events = G_IO_IN | G_IO_HUP | G_IO_ERR;
+    g_source_add_poll(source, &real_source->fd);
+
+    if (!already_piped)
+      PySignal_SetWakeupFd(pipe_fds[1]);
+#endif
+    return source;
 }
 
 
@@ -6952,20 +6951,26 @@ _wrap_gtk_assistant_set_forward_page_func(PyGObject *self, PyObject *args,
                           kwlist, &pyfunc, &pyarg))
         return NULL;
 
-    if (!PyCallable_Check(pyfunc)) {
+    if (pyfunc != Py_None  && !PyCallable_Check(pyfunc)) {
         PyErr_SetString(PyExc_TypeError,
                         "page_func must be a callable object");
         return NULL;
     }
-    cunote = g_new0(PyGtkCustomNotify, 1);
-    cunote->func = pyfunc;
-    cunote->data = pyarg;
-    Py_INCREF(cunote->func);
-    Py_XINCREF(cunote->data);
+
+    if (pyfunc == Py_None) {
+        gtk_assistant_set_forward_page_func(GTK_ASSISTANT(self->obj),
+                                            NULL, NULL, NULL);
+    } else {
+        cunote = g_new0(PyGtkCustomNotify, 1);
+        cunote->func = pyfunc;
+        cunote->data = pyarg;
+        Py_INCREF(cunote->func);
+        Py_XINCREF(cunote->data);
  
-    gtk_assistant_set_forward_page_func(GTK_ASSISTANT(self->obj),
-                                        pygtk_assistant_set_forward_page_func_cb,
-                                        cunote, pygtk_custom_destroy_notify);
+        gtk_assistant_set_forward_page_func(GTK_ASSISTANT(self->obj),
+                                            pygtk_assistant_set_forward_page_func_cb,
+                                            cunote, pygtk_custom_destroy_notify);
+    }
 
     Py_INCREF(Py_None);
     return Py_None;
@@ -7531,7 +7536,8 @@ _wrap_gtk_recent_info_get_application_info(PyGObject *self, PyObject *args,
                                            PyObject *kwargs)
 {
     static char *kwlist[] = { "app_name", NULL };
-    gchar *app_name, *app_exec = NULL;
+    gchar *app_name;
+    const gchar *app_exec = NULL;
     gboolean ret;
     PyObject *py_ret;
     guint count = 0;
@@ -8733,4 +8739,117 @@ _wrap_gtk_message_dialog__get_label(PyObject *self, void *closure)
     ret = GTK_MESSAGE_DIALOG(pygobject_get(self))->label;
     /* pygobject_new handles NULL checking */
     return pygobject_new((GObject *)ret);
+}
+%%
+override gtk_hsv_get_color noargs
+static PyObject *
+_wrap_gtk_hsv_get_color(PyGObject *self)
+{
+    gdouble h, s, v;
+
+    gtk_hsv_get_color(GTK_HSV(self->obj), &h, &s, &v);
+
+    return Py_BuildValue("(ddd)", h, s, v);
+}
+%%
+override gtk_hsv_get_metrics noargs
+static PyObject *
+_wrap_gtk_hsv_get_metrics(PyGObject *self)
+{
+    gint size, ring_width;
+
+    gtk_hsv_get_metrics(GTK_HSV(self->obj), &size, &ring_width);
+
+    return Py_BuildValue("(ii)", size, ring_width);
+}
+%%
+override gtk_hsv_to_rgb kwargs
+static PyObject *
+_wrap_gtk_hsv_to_rgb(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "h", "s", "v", NULL };
+    gdouble h=0, s=0, v=0;
+    gdouble r, g, b;
+    
+    if (!PyArg_ParseTupleAndKeywords(args,kwargs,
+                                     "ddd:gtk.hsv_to_rgb",
+                                     kwlist, &h, &s, &v))
+        return NULL;
+    
+    gtk_hsv_to_rgb(h, s, v, &r, &g, &b);
+
+    return Py_BuildValue("(ddd)", r, g, b);
+}
+%%
+override gtk_cell_renderer_get_alignment noargs
+static PyObject *
+_wrap_gtk_cell_renderer_get_alignment(PyGObject *self)
+{
+    gfloat xalign, yalign;
+
+    gtk_cell_renderer_get_alignment(GTK_CELL_RENDERER(self->obj),
+                                    &xalign, &yalign);
+
+    return Py_BuildValue("(dd)", xalign, yalign);
+}
+%%
+override gtk_cell_renderer_get_padding noargs
+static PyObject *
+_wrap_gtk_cell_renderer_get_padding(PyGObject *self)
+{
+    gint xpad, ypad;
+
+    gtk_cell_renderer_get_padding(GTK_CELL_RENDERER(self->obj), &xpad, &ypad);
+
+    return Py_BuildValue("(ii)", xpad, ypad);
+}
+%%
+override gtk_widget_set_allocation kwargs
+static PyObject *
+_wrap_gtk_widget_set_allocation(PyGObject *self,
+                                PyObject *args,
+                                PyObject *kwargs)
+{
+    static char *kwlist[] = { "allocation", NULL };
+    PyObject *py_allocation;
+    GdkRectangle allocation = { 0, 0, 0, 0 };
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,"O:Gtk.Widget.set_allocation",
+                                     kwlist, &py_allocation))
+        return NULL;
+
+    if (!pygdk_rectangle_from_pyobject(py_allocation, &allocation))
+        return NULL;
+    
+    gtk_widget_set_allocation(GTK_WIDGET(self->obj), &allocation);
+    
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+%%
+override gtk_clipboard_wait_for_uris noargs
+static PyObject *
+_wrap_gtk_clipboard_wait_for_uris(PyGObject *self)
+{
+    gchar **uris = NULL, **tmp;
+    PyObject *ret;
+    int i = 0, j;
+
+    uris = gtk_clipboard_wait_for_uris(GTK_CLIPBOARD(self->obj));
+
+    if (uris) {
+        tmp = uris;
+        while (*tmp)
+            tmp++, i++;
+
+        ret = PyTuple_New(i);
+        for (j = 0; j < i; j++)
+            PyTuple_SetItem(ret, j, PyString_FromString(uris[j]));
+
+        g_strfreev(uris);
+
+        return ret;
+    }
+    Py_INCREF(Py_None);
+    return Py_None;
 }

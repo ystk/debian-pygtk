@@ -180,11 +180,8 @@ linkend="signal-gtkcurve--curve-type-changed">curve-type-changed</link>"</term>
     <title>Description</title>
 
     <note>
-      <para>This widget is considered too specialized or little-used for
-PyGTK, and will in the future be moved to some other package. If your
-application needs this widget, feel free to use it, as the widget does work
-and is useful in some applications; it's just not of general interest.
-However, it will eventually move out of the PyGTK distribution.</para>
+      <para><link linkend="class-gtkcurve"><classname>gtk.Curve</classname></link>
+      is deprecated in GTK+ 2.20 and PyGTK 2.22 since it is too specialized.</para>
     </note>
 
     <para>The <link
@@ -307,7 +304,7 @@ linkend="method-gtkcurve--reset"><methodname>reset</methodname>()</link>.</para>
       <title>gtk.Curve.get_vector</title>
 
       <programlisting><methodsynopsis language="python">
-	  <methodname>set_vector</methodname>
+	  <methodname>get_vector</methodname>
 	  <methodparam><parameter
 			 role="keyword">size</parameter><initializer>-1</initializer></methodparam>
 	</methodsynopsis></programlisting>
@@ -335,7 +332,7 @@ specified by <parameter>size</parameter>; if <parameter>size</parameter> is
       <title>gtk.Curve.set_vector</title>
 
       <programlisting><methodsynopsis language="python">
-	  <methodname>get_vector</methodname>
+	  <methodname>set_vector</methodname>
 	  <methodparam><parameter
 			 role="keyword">vector</parameter></methodparam>
 	</methodsynopsis></programlisting>
