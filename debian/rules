@@ -44,7 +44,12 @@ unpatch:
 	    cp config.guess.orig config.guess
 	rm -rf .pc
 
-build-%/configure-stamp: patch-stamp
+autoreconf-stamp: patch-stamp
+	dh_testdir
+	dh_autoreconf autoreconf -- -f -i -I m4
+	touch $@
+
+build-%/configure-stamp: autoreconf-stamp
 	dh_testdir
 	mkdir -p build-$*
 	cd build-$* && \
@@ -57,7 +62,7 @@ build-%/build-stamp: build-%/configure-stamp
 	PYTHON=/usr/bin/python$* $(MAKE) -C build-$* pyexecdir=$(call py_libdir_sh, $*)
 	touch $@
 
-dbg-build-%/configure-stamp: patch-stamp
+dbg-build-%/configure-stamp: autoreconf-stamp
 	dh_testdir
 	mkdir -p dbg-build-$*
 	cd dbg-build-$* && \
@@ -74,12 +79,12 @@ build: $(PYVERS:%=build-%/build-stamp) $(PYVERS:%=dbg-build-%/build-stamp)
 
 build-%/check-stamp: build-%/build-stamp
 	dh_testdir
-	G_HOME=/ PYTHON=/usr/bin/python$* xvfb-run -s "-screen 0 1280x1024x24 -noreset" $(MAKE) -C build-$* check
+	G_HOME=/ PYTHON=/usr/bin/python$* xvfb-run -a -s "-screen 0 1280x1024x24 -noreset" $(MAKE) -C build-$* check
 	touch $@
 
 dbg-build-%/check-stamp: dbg-build-%/build-stamp
 	dh_testdir
-	G_HOME=/ PYTHON=/usr/bin/python$*-dbg xvfb-run -s "-screen 0 1280x1024x24 -noreset" $(MAKE) -C dbg-build-$* check
+	G_HOME=/ PYTHON=/usr/bin/python$*-dbg xvfb-run -a -s "-screen 0 1280x1024x24 -noreset" $(MAKE) -C dbg-build-$* check
 	touch $@
 
 check: $(PYVERS:%=build-%/check-stamp) $(PYVERS:%=dbg-build-%/check-stamp)
@@ -152,6 +157,8 @@ clean::
 	rm -rf debian/tmp-*
 	rm -rf build-* dbg-build-*
 	rm -f tests/*.pyc
+	rm -f autoreconf-stamp
+	dh_autoreconf_clean
 	$(MAKE) -f debian/rules unpatch
 	dh_clean
 

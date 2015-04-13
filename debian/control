@@ -8,11 +8,11 @@ Section: python
 Priority: optional
 Maintainer: Sebastien Bacher <seb128@debian.org>
 Uploaders: Torsten Landschoff <torsten@debian.org>,
-           Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Josselin Mouette <joss@debian.org>, Laurent Bigonville <bigon@debian.org>, Michael Biebl <biebl@debian.org>
+           Andreas Henriksson <andreas@fatal.se>, Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Josselin Mouette <joss@debian.org>, Laurent Bigonville <bigon@debian.org>, Martin Pitt <mpitt@debian.org>, Michael Biebl <biebl@debian.org>
 Build-Depends: debhelper (>= 8),
                gnome-pkg-tools (>= 0.10),
                cdbs,
-               autotools-dev,
+               dh-autoreconf,
                xvfb (>= 2:1.6.0), xauth, xfonts-base,
                python-all-dev (>= 2.6.6-3~),
                python-all-dbg,
@@ -20,7 +20,7 @@ Build-Depends: debhelper (>= 8),
                libglib2.0-dev (>= 2.8.0),
                libpango1.0-dev (>= 1.21.4),
                libatk1.0-dev (>= 1.12.0),
-               libglade2-dev (>= 2.5.0),
+               libglade2-dev (>= 1:2.5.0),
                python-numpy-dbg (>= 1:1.4.1-4~),
                python-cairo-dev (>= 1.0.2),
                python-cairo-dbg (>= 1.0.2),
@@ -31,8 +31,8 @@ Build-Depends: debhelper (>= 8),
                gnome-icon-theme
 X-Python-Version: >= 2.5
 Standards-Version: 3.9.2
-Vcs-Browser: http://svn.debian.org/viewsvn/pkg-gnome/packages/unstable/pygtk/
-Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/packages/unstable/pygtk/
+Vcs-Browser: http://svn.debian.org/viewsvn/pkg-gnome/attic/pygtk/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/attic/pygtk/
 Homepage: http://www.pygtk.org/
 
 Package: python-gtk2
@@ -47,6 +47,10 @@ Breaks: python-gtkglext1 (<< 1.1.0-7~)
 Description: Python bindings for the GTK+ widget set
  This archive contains modules that allow you to use GTK+ in Python
  programs.
+ .
+ This package is deprecated, you should migrate to using
+ gobject-introspection (GIR) based python bindings instead (PyGObject).
+ https://wiki.gnome.org/Projects/PyGObject/IntrospectionPorting
 
 Package: python-gtk2-dbg
 Architecture: any
@@ -65,6 +69,10 @@ Description: Python bindings for the GTK+ widget set (debug extension)
  programs.
  .
  This package contains the extension built for the Python debug interpreter.
+ .
+ This package is deprecated, you should migrate to using
+ gobject-introspection (GIR) based python bindings instead (PyGObject).
+ https://wiki.gnome.org/Projects/PyGObject/IntrospectionPorting
 
 Package: python-gtk2-dev
 Architecture: all
@@ -80,6 +88,10 @@ Recommends: python-gtk2-doc
 Description: GTK+ bindings: devel files
  This archive contains files that allow you to build wrappers for addons
  that interoperate with python-gtk2 (pygtk).
+ .
+ This package is deprecated, you should migrate to using
+ gobject-introspection (GIR) based python bindings instead (PyGObject).
+ https://wiki.gnome.org/Projects/PyGObject/IntrospectionPorting
 
 Package: python-glade2
 Architecture: any
@@ -93,6 +105,10 @@ Description: GTK+ bindings: Glade support
  makes it very easy to create a user interface. In the target
  application you just need to load the interface description from
  the .glade file instead of constructing the GUI at runtime.
+ .
+ This package is deprecated, you should migrate to using
+ gobject-introspection (GIR) based python bindings instead (PyGObject).
+ https://wiki.gnome.org/Projects/PyGObject/IntrospectionPorting
 
 Package: python-gtk2-doc
 Architecture: all
@@ -114,3 +130,7 @@ Description: Python bindings for the GTK+ widget set - documentation
  .
  This package also provides several examples showing how to use these
  bindings to build simple GUI applications.
+ .
+ This package is deprecated, you should migrate to using
+ gobject-introspection (GIR) based python bindings instead (PyGObject).
+ https://wiki.gnome.org/Projects/PyGObject/IntrospectionPorting

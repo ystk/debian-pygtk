@@ -1,3 +1,22 @@
+pygtk (2.24.0-4) unstable; urgency=low
+
+  * Team upload.
+
+  [ Josselin Mouette ]
+  * Add missing epoch on libglade build-dependency.
+
+  [ Andreas Henriksson ]
+  * Fix Vcs-* URLs, pygtk is in attic (not packages/unstable).
+  * Add deprecated notice to all package descriptions.
+
+  [ Erwan Prioul ]
+  * Use dh-autoreconf to fix FTBFS on ppc64el (Closes: #750663)
+
+  [ Aurelien Jarno ]
+  * Add -a to xvfb-run invokations to fix parallell build.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sun, 24 Aug 2014 08:04:49 -0700
+
 pygtk (2.24.0-3) unstable; urgency=low
 
   [ Josselin Mouette ]
